@@ -4,6 +4,6 @@
     "githubURL": "https://github.com/colouring-cities/colouring-core",
     "privacyStatement": "{Privacy statement goes here}",
 
-    "initialMapPosition": [ 51.5245255, -0.1338422 ],
+    "initialMapPosition": [ -33.8688, 151.2093 ],
     "initialZoomLevel": 16
 }

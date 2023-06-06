@@ -38,9 +38,9 @@ CREATE TABLE IF NOT EXISTS building_properties (
     -- internal primary key
     building_property_id serial PRIMARY KEY,
     -- UPRN
-    uprn bigint,
+    uprn varchar,
     -- Parent should reference UPRN, but assume dataset may be (initially) incomplete
-    parent_uprn bigint,
+    parent_uprn varchar,
     -- Building ID may be null for failed matches
     building_id integer REFERENCES buildings,
     -- TOID match provided by AddressBase

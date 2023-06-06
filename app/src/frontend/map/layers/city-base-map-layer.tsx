@@ -23,7 +23,8 @@ export function CityBaseMapLayer({ theme }: { theme: MapTheme }) {
     // In either theme case, we will use OS's light theme, but add our own filter
     const theme_class = theme === 'light' ? "light-theme" : "night-theme";
 
-    const baseUrl = `https://api.os.uk/maps/raster/v1/zxy/${layer}/{z}/{x}/{y}.png?key=${apiKey}`;
+    //const baseUrl = `https://api.os.uk/maps/raster/v1/zxy/${layer}/{z}/{x}/{y}.png?key=${apiKey}`;
+    const baseUrl = `https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png`
     const attribution = `Building attribute data is © Colouring Cities contributors. Maps contain OS data © Crown copyright: OS Maps baselayers and building outlines. <a href=/ordnance-survey-licence.html>OS licence</a>`;
 
     return <TileLayer

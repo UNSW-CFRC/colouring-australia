@@ -17,5 +17,5 @@ CREATE TABLE IF NOT EXISTS planning_data (
         data_source VARCHAR(70),
         data_source_link VARCHAR(150),
         address VARCHAR(300),
-        uprn bigint
+        uprn VARCHAR(30)
 );
