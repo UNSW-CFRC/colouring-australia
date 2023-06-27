@@ -77,6 +77,46 @@ export const categoryMapsConfig: {[key in Category]: CategoryMapDefinition[]} = 
                     { color: '#980043', text: '≥152'}
                 ]
             },
+        },{
+            mapStyle: 'size_storeys',
+            legend: {
+                title: 'Number of Storeys',
+                elements: [
+                    { color: '#ffffcc', text: '40+'},
+                    { color: '#fed976', text: '20-40'},
+                    { color: '#fd8d3c', text: '10-20'},
+                    { color: '#e31a1c', text: '6-10'},
+                    { color: '#800026', text: '1-6'}
+                ]
+            },
+        },{
+            mapStyle: 'size_plot',
+            legend: {
+                title: 'Size of Plot',
+                elements: [
+                    { color: '#e7e1ef', text: '0-80'},
+                    { color: '#d4b9da', text: '80-150'},
+                    { color: '#c994c7', text: '150-300'},
+                    { color: '#df65b0', text: '300-1,000'},
+                    { color: '#e7298a', text: '1000-10,000'},
+                    { color: '#ce1256', text: '10,000-100,000'},
+                    { color: '#980043', text: '≥100,000'}
+                ]
+            },
+        },{
+            mapStyle: 'size_footprint',
+            legend: {
+                title: 'Size of Footprint',
+                elements: [
+                    { color: '#e7e1ef', text: '0-80'},
+                    { color: '#d4b9da', text: '80-150'},
+                    { color: '#c994c7', text: '150-300'},
+                    { color: '#df65b0', text: '300-1,000'},
+                    { color: '#e7298a', text: '1000-10,000'},
+                    { color: '#ce1256', text: '10,000-100,000'},
+                    { color: '#980043', text: '≥100,000'}
+                ]
+            },
         }
     ],
     [Category.Team]: [{
@@ -283,22 +323,69 @@ export const categoryMapsConfig: {[key in Category]: CategoryMapDefinition[]} = 
             },
         }
     ],
-    [Category.EnergyPerformance]: [{
-        mapStyle: 'sust_dec',
-        legend: {
-            title: 'Sustainability',
-            description: 'DEC Rating',
-            elements: [
-                { color: "#007f3d", text: 'A' },
-                { color: "#2c9f29", text: 'B' },
-                { color: "#9dcb3c", text: 'C' },
-                { color: "#fff200", text: 'D' },
-                { color: "#f7af1d", text: 'E' },
-                { color: "#ed6823", text: 'F' },
-                { color: "#e31d23", text: 'G' },
-            ]
-        },
-    }],
+    [Category.EnergyPerformance]: [
+        {
+            mapStyle: 'ext_nabers_energy_rating',
+            legend: {
+                title: 'NABERS Energy',
+                description: 'NABERS Energy Rating',
+                elements: [
+                    { color: "#ff0000", text: '0 Star' },
+                    { color: "#e92b00", text: '1 Star' },
+                    { color: "#d35500", text: '2 Star' },
+                    { color: "#bd8000", text: '3 Star' },
+                    { color: "#a6aa00", text: '4 Star' },
+                    { color: "#90d500", text: '5 Star' },
+                    { color: "#7aff00", text: '6 Star' },
+                ]
+            },
+        },{
+            mapStyle: 'ext_nabers_water_rating',
+            legend: {
+                title: 'NABERS Water',
+                description: 'NABERS Water Rating',
+                elements: [
+                    { color: "#ff0000", text: '0 Star' },
+                    { color: "#e92b00", text: '1 Star' },
+                    { color: "#d35500", text: '2 Star' },
+                    { color: "#bd8000", text: '3 Star' },
+                    { color: "#a6aa00", text: '4 Star' },
+                    { color: "#90d500", text: '5 Star' },
+                    { color: "#7aff00", text: '6 Star' },
+                ]
+            },
+        },{
+            mapStyle: 'ext_nabers_indoor_rating',
+            legend: {
+                title: 'NABERS Indoors',
+                description: 'NABERS Indoor Environment Quality Rating',
+                elements: [
+                    { color: "#ff0000", text: '0 Star' },
+                    { color: "#e92b00", text: '1 Star' },
+                    { color: "#d35500", text: '2 Star' },
+                    { color: "#bd8000", text: '3 Star' },
+                    { color: "#a6aa00", text: '4 Star' },
+                    { color: "#90d500", text: '5 Star' },
+                    { color: "#7aff00", text: '6 Star' },
+                ]
+            },
+        },{
+            mapStyle: 'ext_nabers_waste_rating',
+            legend: {
+                title: 'NABERS Waste',
+                description: 'NABERS Waste Rating',
+                elements: [
+                    { color: "#ff0000", text: '0 Star' },
+                    { color: "#e92b00", text: '1 Star' },
+                    { color: "#d35500", text: '2 Star' },
+                    { color: "#bd8000", text: '3 Star' },
+                    { color: "#a6aa00", text: '4 Star' },
+                    { color: "#90d500", text: '5 Star' },
+                    { color: "#7aff00", text: '6 Star' },
+                ]
+            },
+        }
+    ],
     [Category.Typology]: [{
         mapStyle: 'building_attachment_form',
         legend: {
@@ -347,13 +434,121 @@ export const categoryMapsConfig: {[key in Category]: CategoryMapDefinition[]} = 
             }
         }
     ],
-    [Category.StreetContext]: [{
-        mapStyle: undefined,
-        legend: {
-            title: 'Street Context',
-            elements: []
-        },
-    }],
+    [Category.StreetContext]: [
+        {
+            mapStyle: 'ext_walk_index',
+            legend: {
+                title: 'Walk Index',
+                elements: [
+                    { color: '#f0f921', text: '>95' },
+                    { color: '#f7e225', text: '90-95' },
+                    { color: '#fccb26', text: '85-90' },
+                    { color: '#feb72d', text: '80-85' },
+                    { color: '#fba338', text: '75-80' },
+                    { color: '#f69044', text: '70-75' },
+                    { color: '#f07e4f', text: '65-70' },
+                    { color: '#e76d5b', text: '60-65' },
+                    { color: '#dc5e66', text: '55-60' },
+                    { color: '#d14e72', text: '50-55' },
+                    { color: '#c53f7e', text: '45-50' },
+                    { color: '#b7308b', text: '40-45' },
+                    { color: '#a72197', text: '35-40' },
+                    { color: '#9612a1', text: '30-35' },
+                    { color: '#8305a7', text: '25-30' },
+                    { color: '#6f00a8', text: '20-25' },
+                    { color: '#5901a5', text: '15-20' },
+                    { color: '#44049e', text: '10-15' },
+                    { color: '#2c0594', text: '5-10' },
+                    { color: '#0d0887', text: '<5' },
+                ]
+                }
+        },{
+            mapStyle: 'ext_walk_employment',
+            legend: {
+                title: 'Walk Index Employment Component',
+                elements: [
+                    { color: '#f0f921', text: '>30' },
+                    { color: '#f7e225', text: '27-30' },
+                    { color: '#feb72d', text: '24-27' },
+                    { color: '#f69044', text: '21-24' },
+                    { color: '#e76d5b', text: '18-21' },
+                    { color: '#d14e72', text: '15-18' },
+                    { color: '#b7308b', text: '12-15' },
+                    { color: '#9612a1', text: '9-12' },
+                    { color: '#6f00a8', text: '6-9' },
+                    { color: '#44049e', text: '3-6' },
+                    { color: '#0d0887', text: '<3' },
+                ]
+                }
+        },{
+            mapStyle: 'ext_walk_education',
+            legend: {
+                title: 'Walk Index Education Component',
+                elements: [
+                    { color: '#f0f921', text: '>14' },
+                    { color: '#f7e225', text: '12-14' },
+                    { color: '#feb72d', text: '10-12' },
+                    { color: '#f69044', text: '8-10' },
+                    { color: '#e76d5b', text: '6-8' },
+                    { color: '#d14e72', text: '4-6' },
+                    { color: '#b7308b', text: '2-4' },
+                    { color: '#9612a1', text: '<2' }
+                ]
+                }
+        },{
+            mapStyle: 'ext_walk_shopping',
+            legend: {
+                title: 'Walk Index Shopping Component',
+                elements: [
+                    { color: '#f0f921', text: '>20' },
+                    { color: '#f7e225', text: '18-20' },
+                    { color: '#feb72d', text: '16-18' },
+                    { color: '#f69044', text: '14-16' },
+                    { color: '#e76d5b', text: '12-14' },
+                    { color: '#d14e72', text: '10-12' },
+                    { color: '#b7308b', text: '8-10' },
+                    { color: '#9612a1', text: '6-8' },
+                    { color: '#6f00a8', text: '4-6' },
+                    { color: '#44049e', text: '2-4' },
+                    { color: '#0d0887', text: '<2' },
+                ]
+                }
+        },{
+            mapStyle: 'ext_walk_errands',
+            legend: {
+                title: 'Walk Index Errands Component',
+                elements: [
+                    { color: '#feb72d', text: '>8' },
+                    { color: '#f69044', text: '7-8' },
+                    { color: '#e76d5b', text: '6-7' },
+                    { color: '#d14e72', text: '5-6' },
+                    { color: '#b7308b', text: '4-5' },
+                    { color: '#9612a1', text: '3-4' },
+                    { color: '#6f00a8', text: '2-3' },
+                    { color: '#44049e', text: '1-2' },
+                    { color: '#0d0887', text: '<1' },
+                ]
+                }
+        },{
+            mapStyle: 'ext_walk_recreation',
+            legend: {
+                title: 'Walk Index Recreation Component',
+                elements: [
+                    { color: '#f0f921', text: '>21' },
+                    { color: '#f7e225', text: '19-21' },
+                    { color: '#feb72d', text: '17-19' },
+                    { color: '#f69044', text: '15-17' },
+                    { color: '#e76d5b', text: '13-15' },
+                    { color: '#d14e72', text: '11-13' },
+                    { color: '#b7308b', text: '9-11' },
+                    { color: '#9612a1', text: '7-9' },
+                    { color: '#6f00a8', text: '5-7' },
+                    { color: '#44049e', text: '3-5' },
+                    { color: '#0d0887', text: '<3' },
+                ]
+                }
+        }
+    ],
     [Category.Resilience]: [
         {
             mapStyle: 'disaster_severity',

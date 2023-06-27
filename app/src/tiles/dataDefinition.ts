@@ -62,6 +62,22 @@ const LAYER_QUERIES = {
             buildings
         WHERE
             size_height_apex IS NOT NULL`,
+    size_footprint: `
+        SELECT
+            geometry_id,
+            size_floor_area_ground AS size_footprint
+        FROM
+            buildings
+        WHERE
+            size_floor_area_ground IS NOT NULL`,
+    size_plot: `
+        SELECT
+            geometry_id,
+            size_plot_area_total AS size_plot
+        FROM
+            buildings
+        WHERE
+            size_plot_area_total IS NOT NULL`,
     construction_core_material: `
         SELECT
             geometry_id,
@@ -248,6 +264,38 @@ const LAYER_QUERIES = {
             buildings
         WHERE
             sust_dec IS NOT NULL`,
+    ext_nabers_energy_rating: `
+        SELECT
+            geometry_id,
+            ext_nabers_energy_rating
+        FROM
+            buildings
+        WHERE
+            ext_nabers_energy_rating IS NOT NULL`,
+    ext_nabers_water_rating: `
+        SELECT
+            geometry_id,
+            ext_nabers_water_rating
+        FROM
+            buildings
+        WHERE
+            ext_nabers_water_rating IS NOT NULL`,
+    ext_nabers_indoor_rating: `
+        SELECT
+            geometry_id,
+            ext_nabers_indoor_rating
+        FROM
+            buildings
+        WHERE
+            ext_nabers_indoor_rating IS NOT NULL`,
+    ext_nabers_waste_rating: `
+        SELECT
+            geometry_id,
+            ext_nabers_waste_rating
+        FROM
+            buildings
+        WHERE
+            ext_nabers_waste_rating IS NOT NULL`,
     building_attachment_form: `
         SELECT
             geometry_id,
@@ -266,6 +314,54 @@ const LAYER_QUERIES = {
             buildings
         WHERE
             current_landuse_order IS NOT NULL`,
+    ext_walk_index: `
+        SELECT
+            geometry_id,
+            ext_walk_index AS ext_walk_index
+        FROM
+            buildings
+        WHERE
+            ext_walk_index IS NOT NULL`,
+    ext_walk_employment: `
+        SELECT
+            geometry_id,
+            ext_walk_employment AS ext_walk_employment
+        FROM
+            buildings
+        WHERE
+            ext_walk_employment IS NOT NULL`,
+    ext_walk_education: `
+        SELECT
+            geometry_id,
+            ext_walk_education AS ext_walk_education
+        FROM
+            buildings
+        WHERE
+            ext_walk_education IS NOT NULL`,
+    ext_walk_shopping: `
+        SELECT
+            geometry_id,
+            ext_walk_shopping AS ext_walk_shopping
+        FROM
+            buildings
+        WHERE
+            ext_walk_shopping IS NOT NULL`,
+    ext_walk_errands: `
+        SELECT
+            geometry_id,
+            ext_walk_errands AS ext_walk_errands
+        FROM
+            buildings
+        WHERE
+            ext_walk_errands IS NOT NULL`,
+    ext_walk_recreation: `
+        SELECT
+            geometry_id,
+            ext_walk_recreation AS ext_walk_recreation
+        FROM
+            buildings
+        WHERE
+            ext_walk_recreation IS NOT NULL`,
     disaster_severity: `
         SELECT
             geometry_id,

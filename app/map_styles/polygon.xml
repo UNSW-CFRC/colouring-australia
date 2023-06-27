@@ -243,6 +243,96 @@
             <LineSymbolizer stroke="#ccc" stroke-width="3.0"/>
         </Rule>
     </Style>
+    <Style name="size_plot">
+        <Rule>
+            <Filter>[size_plot] &lt;= 0</Filter>
+            <PolygonSymbolizer fill="#ffffff" />
+        </Rule>
+        <Rule>
+            <Filter>[size_plot] &gt; 0 and [size_plot] &lt; 80</Filter>
+            <PolygonSymbolizer fill="#e7e1ef" />
+        </Rule>
+        <Rule>
+            <Filter>[size_plot] &gt;= 80 and [size_plot] &lt; 150</Filter>
+            <PolygonSymbolizer fill="#d4b9da" />
+        </Rule>
+        <Rule>
+            <Filter>[size_plot] &gt;= 150 and [size_plot] &lt; 300</Filter>
+            <PolygonSymbolizer fill="#c994c7" />
+        </Rule>
+        <Rule>
+            <Filter>[size_plot] &gt;= 300 and [size_plot] &lt; 1000</Filter>
+            <PolygonSymbolizer fill="#df65b0" />
+        </Rule>
+        <Rule>
+            <Filter>[size_plot] &gt;= 1000 and [size_plot] &lt; 10000</Filter>
+            <PolygonSymbolizer fill="#e7298a" />
+        </Rule>
+        <Rule>
+            <Filter>[size_plot] &gt;= 10000 and [size_plot] &lt; 100000</Filter>
+            <PolygonSymbolizer fill="#ce1256" />
+        </Rule>
+        <Rule>
+            <Filter>[size_plot] &gt;= 100000</Filter>
+            <PolygonSymbolizer fill="#980043" />
+        </Rule>
+
+        <Rule>
+            <MaxScaleDenominator>17061</MaxScaleDenominator>
+            <MinScaleDenominator>4264</MinScaleDenominator>
+            <LineSymbolizer stroke="#ccc" stroke-width="1.0"/>
+        </Rule>
+        <Rule>
+            <MaxScaleDenominator>4264</MaxScaleDenominator>
+            <MinScaleDenominator>0</MinScaleDenominator>
+            <LineSymbolizer stroke="#ccc" stroke-width="3.0"/>
+        </Rule>
+    </Style>
+    <Style name="size_footprint">
+        <Rule>
+            <Filter>[size_footprint] &lt;= 0</Filter>
+            <PolygonSymbolizer fill="#ffffff" />
+        </Rule>
+        <Rule>
+            <Filter>[size_footprint] &gt; 0 and [size_footprint] &lt; 80</Filter>
+            <PolygonSymbolizer fill="#e7e1ef" />
+        </Rule>
+        <Rule>
+            <Filter>[size_footprint] &gt;= 80 and [size_footprint] &lt; 150</Filter>
+            <PolygonSymbolizer fill="#d4b9da" />
+        </Rule>
+        <Rule>
+            <Filter>[size_footprint] &gt;= 150 and [size_footprint] &lt; 300</Filter>
+            <PolygonSymbolizer fill="#c994c7" />
+        </Rule>
+        <Rule>
+            <Filter>[size_footprint] &gt;= 300 and [size_footprint] &lt; 1000</Filter>
+            <PolygonSymbolizer fill="#df65b0" />
+        </Rule>
+        <Rule>
+            <Filter>[size_footprint] &gt;= 1000 and [size_footprint] &lt; 10000</Filter>
+            <PolygonSymbolizer fill="#e7298a" />
+        </Rule>
+        <Rule>
+            <Filter>[size_footprint] &gt;= 10000 and [size_footprint] &lt; 100000</Filter>
+            <PolygonSymbolizer fill="#ce1256" />
+        </Rule>
+        <Rule>
+            <Filter>[size_footprint] &gt;= 100000</Filter>
+            <PolygonSymbolizer fill="#980043" />
+        </Rule>
+
+        <Rule>
+            <MaxScaleDenominator>17061</MaxScaleDenominator>
+            <MinScaleDenominator>4264</MinScaleDenominator>
+            <LineSymbolizer stroke="#ccc" stroke-width="1.0"/>
+        </Rule>
+        <Rule>
+            <MaxScaleDenominator>4264</MaxScaleDenominator>
+            <MinScaleDenominator>0</MinScaleDenominator>
+            <LineSymbolizer stroke="#ccc" stroke-width="3.0"/>
+        </Rule>
+    </Style>
     <Style name="construction_core_material">
         <Rule>
             <Filter>[construction_core_material] = "Wood"</Filter>
@@ -529,6 +619,170 @@
             <LineSymbolizer stroke="#95beba" stroke-width="2.5"/>
         </Rule>
     </Style>
+    <Style name="ext_nabers_energy_rating">
+        <Rule>
+            <Filter>[ext_nabers_energy_rating] &lt; 1.00</Filter>
+            <PolygonSymbolizer fill="#ff0000" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_energy_rating] &gt;= 1.00 and [ext_nabers_energy_rating] &lt; 2.00</Filter>
+            <PolygonSymbolizer fill="#e92b00" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_energy_rating] &gt;= 2.00 and [ext_nabers_energy_rating] &lt; 3.00</Filter>
+            <PolygonSymbolizer fill="#d35500" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_energy_rating] &gt;= 3.00 and [ext_nabers_energy_rating] &lt; 4.00</Filter>
+            <PolygonSymbolizer fill="#bd8000" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_energy_rating] &gt;= 4.00 and [ext_nabers_energy_rating] &lt; 5.00</Filter>
+            <PolygonSymbolizer fill="#a6aa00" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_energy_rating] &gt;= 5.00 and [ext_nabers_energy_rating] &lt; 6.00</Filter>
+            <PolygonSymbolizer fill="#90d500" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_energy_rating] &gt;= 6.00</Filter>
+            <PolygonSymbolizer fill="#7aff00" />
+        </Rule>
+
+        <Rule>
+            <MaxScaleDenominator>17061</MaxScaleDenominator>
+            <MinScaleDenominator>4264</MinScaleDenominator>
+            <LineSymbolizer stroke="#888" stroke-width="1.0"/>
+        </Rule>
+        <Rule>
+            <MaxScaleDenominator>4264</MaxScaleDenominator>
+            <MinScaleDenominator>0</MinScaleDenominator>
+            <LineSymbolizer stroke="#888" stroke-width="3.0"/>
+        </Rule>
+    </Style>
+    <Style name="ext_nabers_water_rating">
+        <Rule>
+            <Filter>[ext_nabers_water_rating] &lt; 1.00</Filter>
+            <PolygonSymbolizer fill="#ff0000" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_water_rating] &gt;= 1.00 and [ext_nabers_water_rating] &lt; 2.00</Filter>
+            <PolygonSymbolizer fill="#e92b00" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_water_rating] &gt;= 2.00 and [ext_nabers_water_rating] &lt; 3.00</Filter>
+            <PolygonSymbolizer fill="#d35500" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_water_rating] &gt;= 3.00 and [ext_nabers_water_rating] &lt; 4.00</Filter>
+            <PolygonSymbolizer fill="#bd8000" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_water_rating] &gt;= 4.00 and [ext_nabers_water_rating] &lt; 5.00</Filter>
+            <PolygonSymbolizer fill="#a6aa00" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_water_rating] &gt;= 5.00 and [ext_nabers_water_rating] &lt; 6.00</Filter>
+            <PolygonSymbolizer fill="#90d500" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_water_rating] &gt;= 6.00</Filter>
+            <PolygonSymbolizer fill="#7aff00" />
+        </Rule>
+
+        <Rule>
+            <MaxScaleDenominator>17061</MaxScaleDenominator>
+            <MinScaleDenominator>4264</MinScaleDenominator>
+            <LineSymbolizer stroke="#888" stroke-width="1.0"/>
+        </Rule>
+        <Rule>
+            <MaxScaleDenominator>4264</MaxScaleDenominator>
+            <MinScaleDenominator>0</MinScaleDenominator>
+            <LineSymbolizer stroke="#888" stroke-width="3.0"/>
+        </Rule>
+    </Style>
+    <Style name="ext_nabers_indoor_rating">
+        <Rule>
+            <Filter>[ext_nabers_indoor_rating] &lt; 1.00</Filter>
+            <PolygonSymbolizer fill="#ff0000" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_indoor_rating] &gt;= 1.00 and [ext_nabers_indoor_rating] &lt; 2.00</Filter>
+            <PolygonSymbolizer fill="#e92b00" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_indoor_rating] &gt;= 2.00 and [ext_nabers_indoor_rating] &lt; 3.00</Filter>
+            <PolygonSymbolizer fill="#d35500" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_indoor_rating] &gt;= 3.00 and [ext_nabers_indoor_rating] &lt; 4.00</Filter>
+            <PolygonSymbolizer fill="#bd8000" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_indoor_rating] &gt;= 4.00 and [ext_nabers_indoor_rating] &lt; 5.00</Filter>
+            <PolygonSymbolizer fill="#a6aa00" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_indoor_rating] &gt;= 5.00 and [ext_nabers_indoor_rating] &lt; 6.00</Filter>
+            <PolygonSymbolizer fill="#90d500" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_indoor_rating] &gt;= 6.00</Filter>
+            <PolygonSymbolizer fill="#7aff00" />
+        </Rule>
+
+        <Rule>
+            <MaxScaleDenominator>17061</MaxScaleDenominator>
+            <MinScaleDenominator>4264</MinScaleDenominator>
+            <LineSymbolizer stroke="#888" stroke-width="1.0"/>
+        </Rule>
+        <Rule>
+            <MaxScaleDenominator>4264</MaxScaleDenominator>
+            <MinScaleDenominator>0</MinScaleDenominator>
+            <LineSymbolizer stroke="#888" stroke-width="3.0"/>
+        </Rule>
+    </Style>
+    <Style name="ext_nabers_waste_rating">
+        <Rule>
+            <Filter>[ext_nabers_waste_rating] &lt; 1.00</Filter>
+            <PolygonSymbolizer fill="#ff0000" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_waste_rating] &gt;= 1.00 and [ext_nabers_waste_rating] &lt; 2.00</Filter>
+            <PolygonSymbolizer fill="#e92b00" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_waste_rating] &gt;= 2.00 and [ext_nabers_waste_rating] &lt; 3.00</Filter>
+            <PolygonSymbolizer fill="#d35500" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_waste_rating] &gt;= 3.00 and [ext_nabers_waste_rating] &lt; 4.00</Filter>
+            <PolygonSymbolizer fill="#bd8000" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_waste_rating] &gt;= 4.00 and [ext_nabers_waste_rating] &lt; 5.00</Filter>
+            <PolygonSymbolizer fill="#a6aa00" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_waste_rating] &gt;= 5.00 and [ext_nabers_waste_rating] &lt; 6.00</Filter>
+            <PolygonSymbolizer fill="#90d500" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_nabers_waste_rating] &gt;= 6.00</Filter>
+            <PolygonSymbolizer fill="#7aff00" />
+        </Rule>
+
+        <Rule>
+            <MaxScaleDenominator>17061</MaxScaleDenominator>
+            <MinScaleDenominator>4264</MinScaleDenominator>
+            <LineSymbolizer stroke="#888" stroke-width="1.0"/>
+        </Rule>
+        <Rule>
+            <MaxScaleDenominator>4264</MaxScaleDenominator>
+            <MinScaleDenominator>0</MinScaleDenominator>
+            <LineSymbolizer stroke="#888" stroke-width="3.0"/>
+        </Rule>
+    </Style>
     <Style name="sust_dec">
         <Rule>
             <Filter>[sust_dec] = A</Filter>
@@ -598,6 +852,298 @@
             <MinScaleDenominator>0</MinScaleDenominator>
             <LineSymbolizer stroke="#888" stroke-width="2.0"/>
         </Rule>
+    </Style>
+    <Style name="ext_walk_index">
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 95.0</Filter>
+            <PolygonSymbolizer fill="#f0f921" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 90.0 and [ext_walk_index] &lt; 95.0</Filter>
+            <PolygonSymbolizer fill="#f7e225" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 85.0 and [ext_walk_index] &lt; 90.0</Filter>
+            <PolygonSymbolizer fill="#fccb26" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 80.0 and [ext_walk_index] &lt; 85.0</Filter>
+            <PolygonSymbolizer fill="#feb72d" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 75.0 and [ext_walk_index] &lt; 80.0</Filter>
+            <PolygonSymbolizer fill="#fba338" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 70.0 and [ext_walk_index] &lt; 75.0</Filter>
+            <PolygonSymbolizer fill="#f69044" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 65.0 and [ext_walk_index] &lt; 70.0</Filter>
+            <PolygonSymbolizer fill="#f07e4f" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 60.0 and [ext_walk_index] &lt; 65.0</Filter>
+            <PolygonSymbolizer fill="#e76d5b" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 55.0 and [ext_walk_index] &lt; 60.0</Filter>
+            <PolygonSymbolizer fill="#dc5e66" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 50.0 and [ext_walk_index] &lt; 55.0</Filter>
+            <PolygonSymbolizer fill="#d14e72" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 45.0 and [ext_walk_index] &lt; 50.0</Filter>
+            <PolygonSymbolizer fill="#c53f7e" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 40.0 and [ext_walk_index] &lt; 45.0</Filter>
+            <PolygonSymbolizer fill="#b7308b" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 35.0 and [ext_walk_index] &lt; 40.0</Filter>
+            <PolygonSymbolizer fill="#a72197" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 30.0 and [ext_walk_index] &lt; 35.0</Filter>
+            <PolygonSymbolizer fill="#9612a1" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 25.0 and [ext_walk_index] &lt; 30.0</Filter>
+            <PolygonSymbolizer fill="#8305a7" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 20.0 and [ext_walk_index] &lt; 25.0</Filter>
+            <PolygonSymbolizer fill="#6f00a8" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 15.0 and [ext_walk_index] &lt; 20.0</Filter>
+            <PolygonSymbolizer fill="#5901a5" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 10.0 and [ext_walk_index] &lt; 15.0</Filter>
+            <PolygonSymbolizer fill="#44049e" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &gt;= 5.0 and [ext_walk_index] &lt; 10.0</Filter>
+            <PolygonSymbolizer fill="#2c0594" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_index] &lt; 5.0</Filter>
+            <PolygonSymbolizer fill="#0d0887" />
+	</Rule>
+    </Style>
+    <Style name="ext_walk_employment">
+        <Rule>
+            <Filter>[ext_walk_employment] &gt;= 30.0</Filter>
+            <PolygonSymbolizer fill="#f0f921" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_employment] &gt;= 27.0 and [ext_walk_employment] &lt; 30.0</Filter>
+            <PolygonSymbolizer fill="#f7e225" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_employment] &gt;= 24.0 and [ext_walk_employment] &lt; 27.0</Filter>
+            <PolygonSymbolizer fill="#feb72d" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_employment] &gt;= 21.0 and [ext_walk_employment] &lt; 24.0</Filter>
+            <PolygonSymbolizer fill="#f69044" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_employment] &gt;= 18.0 and [ext_walk_employment] &lt; 21.0</Filter>
+            <PolygonSymbolizer fill="#e76d5b" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_employment] &gt;= 15.0 and [ext_walk_employment] &lt; 18.0</Filter>
+            <PolygonSymbolizer fill="#d14e72" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_employment] &gt;= 12.0 and [ext_walk_employment] &lt; 15.0</Filter>
+            <PolygonSymbolizer fill="#b7308b" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_employment] &gt;= 9.0 and [ext_walk_employment] &lt; 12.0</Filter>
+            <PolygonSymbolizer fill="#9612a1" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_employment] &gt;= 6.0 and [ext_walk_employment] &lt; 9.0</Filter>
+            <PolygonSymbolizer fill="#6f00a8" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_employment] &gt;= 3.0 and [ext_walk_employment] &lt; 6.0</Filter>
+            <PolygonSymbolizer fill="#44049e" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_employment] &lt; 3.0</Filter>
+            <PolygonSymbolizer fill="#0d0887" />
+	</Rule>
+    </Style>
+    <Style name="ext_walk_education">
+        <Rule>
+            <Filter>[ext_walk_education] &gt;= 14.0</Filter>
+            <PolygonSymbolizer fill="#f0f921" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_education] &gt;= 12.0 and [ext_walk_education] &lt; 14.0</Filter>
+            <PolygonSymbolizer fill="#f7e225" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_education] &gt;= 10.0 and [ext_walk_education] &lt; 12.0</Filter>
+            <PolygonSymbolizer fill="#feb72d" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_education] &gt;= 8.0 and [ext_walk_education] &lt; 10.0</Filter>
+            <PolygonSymbolizer fill="#f69044" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_education] &gt;= 6.0 and [ext_walk_education] &lt; 8.0</Filter>
+            <PolygonSymbolizer fill="#e76d5b" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_education] &gt;= 4.0 and [ext_walk_education] &lt; 6.0</Filter>
+            <PolygonSymbolizer fill="#d14e72" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_education] &gt;= 2.0 and [ext_walk_education] &lt; 4.0</Filter>
+            <PolygonSymbolizer fill="#b7308b" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_education] &lt; 2.0</Filter>
+            <PolygonSymbolizer fill="#9612a1" />
+        </Rule>
+    </Style>
+    <Style name="ext_walk_shopping">
+        <Rule>
+            <Filter>[ext_walk_shopping] &gt;= 20.0</Filter>
+            <PolygonSymbolizer fill="#f0f921" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_shopping] &gt;= 18.0 and [ext_walk_shopping] &lt; 20.0</Filter>
+            <PolygonSymbolizer fill="#f7e225" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_shopping] &gt;= 16.0 and [ext_walk_shopping] &lt; 18.0</Filter>
+            <PolygonSymbolizer fill="#feb72d" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_shopping] &gt;= 14.0 and [ext_walk_shopping] &lt; 16.0</Filter>
+            <PolygonSymbolizer fill="#f69044" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_shopping] &gt;= 12.0 and [ext_walk_shopping] &lt; 14.0</Filter>
+            <PolygonSymbolizer fill="#e76d5b" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_shopping] &gt;= 10.0 and [ext_walk_shopping] &lt; 12.0</Filter>
+            <PolygonSymbolizer fill="#d14e72" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_shopping] &gt;= 8.0 and [ext_walk_shopping] &lt; 10.0</Filter>
+            <PolygonSymbolizer fill="#b7308b" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_shopping] &gt;= 6.0 and [ext_walk_shopping] &lt; 8.0</Filter>
+            <PolygonSymbolizer fill="#9612a1" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_shopping] &gt;= 4.0 and [ext_walk_shopping] &lt; 6.0</Filter>
+            <PolygonSymbolizer fill="#6f00a8" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_shopping] &gt;= 2.0 and [ext_walk_shopping] &lt; 4.0</Filter>
+            <PolygonSymbolizer fill="#44049e" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_shopping] &lt; 2.0</Filter>
+            <PolygonSymbolizer fill="#0d0887" />
+	</Rule>
+    </Style>
+    <Style name="ext_walk_errands">
+        <Rule>
+            <Filter>[ext_walk_errands] &gt;= 8.0</Filter>
+            <PolygonSymbolizer fill="#feb72d" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_errands] &gt;= 7.0 and [ext_walk_errands] &lt; 8.0</Filter>
+            <PolygonSymbolizer fill="#f69044" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_errands] &gt;= 6.0 and [ext_walk_errands] &lt; 7.0</Filter>
+            <PolygonSymbolizer fill="#e76d5b" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_errands] &gt;= 5.0 and [ext_walk_errands] &lt; 6.0</Filter>
+            <PolygonSymbolizer fill="#d14e72" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_errands] &gt;= 4.0 and [ext_walk_errands] &lt; 5.0</Filter>
+            <PolygonSymbolizer fill="#b7308b" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_errands] &gt;= 3.0 and [ext_walk_errands] &lt; 4.0</Filter>
+            <PolygonSymbolizer fill="#9612a1" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_errands] &gt;= 2.0 and [ext_walk_errands] &lt; 3.0</Filter>
+            <PolygonSymbolizer fill="#6f00a8" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_errands] &gt;= 1.0 and [ext_walk_errands] &lt; 2.0</Filter>
+            <PolygonSymbolizer fill="#44049e" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_errands] &lt; 1.0</Filter>
+            <PolygonSymbolizer fill="#0d0887" />
+	</Rule>
+    </Style>
+    <Style name="ext_walk_recreation">
+        <Rule>
+            <Filter>[ext_walk_recreation] &gt;= 21.0</Filter>
+            <PolygonSymbolizer fill="#f0f921" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_recreation] &gt;= 19.0 and [ext_walk_recreation] &lt; 21.0</Filter>
+            <PolygonSymbolizer fill="#f7e225" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_recreation] &gt;= 17.0 and [ext_walk_recreation] &lt; 19.0</Filter>
+            <PolygonSymbolizer fill="#feb72d" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_recreation] &gt;= 15.0 and [ext_walk_recreation] &lt; 17.0</Filter>
+            <PolygonSymbolizer fill="#f69044" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_recreation] &gt;= 13.0 and [ext_walk_recreation] &lt; 15.0</Filter>
+            <PolygonSymbolizer fill="#e76d5b" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_recreation] &gt;= 11.0 and [ext_walk_recreation] &lt; 13.0</Filter>
+            <PolygonSymbolizer fill="#d14e72" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_recreation] &gt;= 9.0 and [ext_walk_recreation] &lt; 11.0</Filter>
+            <PolygonSymbolizer fill="#b7308b" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_recreation] &gt;= 7.0 and [ext_walk_recreation] &lt; 9.0</Filter>
+            <PolygonSymbolizer fill="#9612a1" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_recreation] &gt;= 5.0 and [ext_walk_recreation] &lt; 7.0</Filter>
+            <PolygonSymbolizer fill="#6f00a8" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_recreation] &gt;= 3.0 and [ext_walk_recreation] &lt; 5.0</Filter>
+            <PolygonSymbolizer fill="#44049e" />
+        </Rule>
+        <Rule>
+            <Filter>[ext_walk_recreation] &lt; 3.0</Filter>
+            <PolygonSymbolizer fill="#0d0887" />
+	</Rule>
     </Style>
     <Style name="is_domestic">
         <Rule>

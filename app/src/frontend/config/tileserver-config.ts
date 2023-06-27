@@ -6,8 +6,17 @@
 export type BuildingMapTileset = 
     'date_year' | 
     'size_height' |
+    'size_storeys' |
+    'size_footprint' |
+    'size_plot' |
     'construction_core_material' |
     'location' |
+    'ext_walk_index' |
+    'ext_walk_employment' |
+    'ext_walk_education' |
+    'ext_walk_shopping' |
+    'ext_walk_errands' |
+    'ext_walk_recreation' |
     'is_domestic' |
     'likes' |
     'typology_likes' |
@@ -18,6 +27,10 @@ export type BuildingMapTileset =
     'planning_applications_status_recent' |
     'planning_applications_status_very_recent' |
     'planning_combined' |
+    'ext_nabers_energy_rating' |
+    'ext_nabers_water_rating' |
+    'ext_nabers_indoor_rating' |
+    'ext_nabers_waste_rating' |
     'sust_dec' |
     'building_attachment_form' |
     'landuse' |
