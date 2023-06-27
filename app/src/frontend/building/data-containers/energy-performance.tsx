@@ -14,11 +14,13 @@ import { MultiDataEntry } from '../data-components/multi-data-entry/multi-data-e
 
 const EnergyCategoryOptions = ["A", "B", "C", "D", "E", "F", "G"];
 const BreeamRatingOptions = [
-    'Outstanding',
-    'Excellent',
-    'Very good',
-    'Good',
-    'Pass',
+    '6 Star',
+    '5 Star',
+    '4 Star',
+    '3 Star',
+    '2 Star',
+    '1 Star',
+    '0 Star',
     'Unclassified'
 ];
 /**
@@ -29,10 +31,10 @@ const SustainabilityView: React.FunctionComponent<CategoryViewProps> = (props) =
         <Fragment>
             <DataEntryGroup name="Energy rating data">
                 <SelectDataEntry
-                    title={dataFields.sust_breeam_rating.title}
-                    slug="sust_breeam_rating"
-                    value={props.building.sust_breeam_rating}
-                    tooltip={dataFields.sust_breeam_rating.tooltip}
+                    title={dataFields.ext_nabers_energy_rating.title}
+                    slug="ext_nabers_energy_rating"
+                    value={props.building.ext_nabers_energy_rating}
+                    tooltip={dataFields.ext_nabers_energy_rating.tooltip}
                     options={BreeamRatingOptions}
                     mode={props.mode}
                     copy={props.copy}

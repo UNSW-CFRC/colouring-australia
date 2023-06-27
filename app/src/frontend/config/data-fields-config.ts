@@ -1289,6 +1289,66 @@ export const dataFields = { /* eslint-disable @typescript-eslint/camelcase */
         tooltip: "Source link(s) for street width data",
         example: ["", "", ""],
     },
+    ext_walk_index: {
+        category: Category.StreetContext,
+        title: "Walkability Index",
+        example: 85.5,
+        tooltip: "Walkability Index",
+    },
+    ext_walk_employment: {
+        category: Category.StreetContext,
+        title: "Walkability Employment (Max 31.9)",
+        example: 15.5,
+        tooltip: "Employment component of the walkability index",
+    },
+    ext_walk_education: {
+        category: Category.StreetContext,
+        title: "Walkability Education (Max 14.3)",
+        example: 10.5,
+        tooltip: "Education component of the walkability index",
+    },
+    ext_walk_shopping: {
+        category: Category.StreetContext,
+        title: "Walkability Shopping (Max 21.6)",
+        example: 15.5,
+        tooltip: "Shopping component of the walkability index",
+    },
+    ext_walk_errands: {
+        category: Category.StreetContext,
+        title: "Walkability Errands (Max 8.9)",
+        example: 5.5,
+        tooltip: "Errands component of the walkability index",
+    },
+    ext_walk_recreation: {
+        category: Category.StreetContext,
+        title: "Walkability Recreation (Max 23.3)",
+        example: 15.5,
+        tooltip: "Recreation component of the walkability index",
+    },
+    ext_nabers_energy_rating: {
+        category: Category.EnergyPerformance,
+        title: "NABERS Energy Star Rating",
+        tooltip: "NABERS Energy Star Rating Value",
+        example: '3 Star',
+    },
+    ext_nabers_water_rating: {
+        category: Category.EnergyPerformance,
+        title: "NABERS Water Star Rating",
+        tooltip: "NABERS Water Star Rating Value",
+        example: '3 Star',
+    },
+    ext_nabers_indoor_rating: {
+        category: Category.EnergyPerformance,
+        title: "NABERS Indoor Environment Star Rating",
+        tooltip: "NABERS Indoor Environment Star Rating Value",
+        example: '3 Star',
+    },
+    ext_nabers_waste_rating: {
+        category: Category.EnergyPerformance,
+        title: "NABERS Waste Star Rating",
+        tooltip: "NABERS Waste Star Rating Value",
+        example: '3 Star',
+    },
 };
 
 export const allFieldsConfig = { ...dataFields, ...buildingUserFields };

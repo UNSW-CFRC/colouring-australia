@@ -26,7 +26,7 @@ VALUES
 ('U120','Defence','order',NULL,True),
 ('U020','Forestry','order',NULL,False),
 ('U100','Industry And Business','order',NULL,True),
-('U030','Minerals','order',NULL,False),
+('U030','Minerals','order',NULL,True),
 ('U040','Recreation And Leisure','order',NULL,True),
 ('U070','Residential','order',NULL,True),
 ('U090','Retail','order',NULL,True),

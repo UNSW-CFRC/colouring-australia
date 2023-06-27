@@ -79,28 +79,18 @@ function getCurrentMenuLinks(username: string): MenuLink[][] {
         ],
         [
             {
-                to: "https://pages.colouring.london",
+                to: "https://www.ahdap.org/colouring-australia",
                 text: "About",
                 external: true
             },
             {
-                to: "https://pages.colouring.london/buildingcategories",
+                to: "https://www.ahdap.org/colouring-australia#data_categories",
                 text: "Data Categories",
                 external: true
             },
             {
-                to: "https://pages.colouring.london/whoisinvolved",
+                to: "https://www.ahdap.org/colouring-australia#who_are_we",
                 text: "Who's Involved?",
-                external: true
-            },
-            {
-                to: "https://pages.colouring.london/data-ethics",
-                text: "Data Ethics",
-                external: true
-            },
-            {
-                to: "https://pages.colouring.london/colouring-cities",
-                text: "Colouring Cities Research Programme",
                 external: true
             },
         ],
@@ -109,18 +99,13 @@ function getCurrentMenuLinks(username: string): MenuLink[][] {
                 to: "/leaderboard.html",
                 text: "Top Contributors"
             },
-            {
-                to: "https://discuss.colouring.london",
-                text: "Discussion Forum",
-                external: true
-            },
-            {
-                to: "https://discuss.colouring.london/c/blog/9",
-                text: "Blog",
-                external: true
-            },
         ],
         [
+            {
+                to: "/data-ethics.html",
+                text: "Data Ethics",
+                external: true
+            },
             {
                 to: "/privacy-policy.html",
                 text: "Privacy Policy"
@@ -136,10 +121,6 @@ function getCurrentMenuLinks(username: string): MenuLink[][] {
             {
                 to: "/data-accuracy.html",
                 text: "Data Accuracy Agreement"
-            },
-            {
-                to: "/ordnance-survey-uprn.html",
-                text: "Ordnance Survey terms of UPRN usage"
             },
         ],
         [

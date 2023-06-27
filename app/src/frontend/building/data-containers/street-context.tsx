@@ -17,6 +17,77 @@ import Verification from '../data-components/verification';
 */
 const StreetscapeView: React.FunctionComponent<CategoryViewProps> = (props) => (
     <Fragment>
+        <DataEntryGroup name="Walkability">
+            <InfoBox>
+                For more information on the Walkability Index please see the project github <a href="https://github.com/JosephineRoper/THERE">here</a>.
+            </InfoBox>
+            <NumericDataEntry
+                title={dataFields.ext_walk_index.title}
+                slug="ext_walk_index"
+                value={props.building.ext_walk_index}
+                tooltip={dataFields.ext_walk_index.tooltip}
+                min={0}
+                max={100}
+                mode={props.mode}
+                copy={props.copy}
+                onChange={props.onChange}
+            />
+            <NumericDataEntry
+                title={dataFields.ext_walk_employment.title}
+                slug="ext_walk_employment"
+                value={props.building.ext_walk_employment}
+                tooltip={dataFields.ext_walk_employment.tooltip}
+                min={0}
+                max={100}
+                mode={props.mode}
+                copy={props.copy}
+                onChange={props.onChange}
+            />
+            <NumericDataEntry
+                title={dataFields.ext_walk_education.title}
+                slug="ext_walk_education"
+                value={props.building.ext_walk_education}
+                tooltip={dataFields.ext_walk_education.tooltip}
+                min={0}
+                max={100}
+                mode={props.mode}
+                copy={props.copy}
+                onChange={props.onChange}
+            />
+            <NumericDataEntry
+                title={dataFields.ext_walk_shopping.title}
+                slug="ext_walk_shopping"
+                value={props.building.ext_walk_shopping}
+                tooltip={dataFields.ext_walk_shopping.tooltip}
+                min={0}
+                max={100}
+                mode={props.mode}
+                copy={props.copy}
+                onChange={props.onChange}
+            />
+            <NumericDataEntry
+                title={dataFields.ext_walk_errands.title}
+                slug="ext_walk_errands"
+                value={props.building.ext_walk_errands}
+                tooltip={dataFields.ext_walk_errands.tooltip}
+                min={0}
+                max={100}
+                mode={props.mode}
+                copy={props.copy}
+                onChange={props.onChange}
+            />
+            <NumericDataEntry
+                title={dataFields.ext_walk_recreation.title}
+                slug="ext_walk_recreation"
+                value={props.building.ext_walk_recreation}
+                tooltip={dataFields.ext_walk_recreation.tooltip}
+                min={0}
+                max={100}
+                mode={props.mode}
+                copy={props.copy}
+                onChange={props.onChange}
+            />
+        </DataEntryGroup>
         <DataEntryGroup name="Does the building have a garden?">
             <SelectDataEntry
                 title={dataFields.context_front_garden.title}
