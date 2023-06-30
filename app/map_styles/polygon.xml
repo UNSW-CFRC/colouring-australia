@@ -621,31 +621,31 @@
     </Style>
     <Style name="ext_nabers_energy_rating">
         <Rule>
-            <Filter>[ext_nabers_energy_rating] &lt; 1.00</Filter>
+            <Filter>[ext_nabers_energy_rating] = "0 Star"</Filter>
             <PolygonSymbolizer fill="#ff0000" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_energy_rating] &gt;= 1.00 and [ext_nabers_energy_rating] &lt; 2.00</Filter>
+            <Filter>[ext_nabers_energy_rating] = "1 Star"</Filter>
             <PolygonSymbolizer fill="#e92b00" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_energy_rating] &gt;= 2.00 and [ext_nabers_energy_rating] &lt; 3.00</Filter>
+            <Filter>[ext_nabers_energy_rating] = "2 Star"</Filter>
             <PolygonSymbolizer fill="#d35500" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_energy_rating] &gt;= 3.00 and [ext_nabers_energy_rating] &lt; 4.00</Filter>
+            <Filter>[ext_nabers_energy_rating] = "3 Star"</Filter>
             <PolygonSymbolizer fill="#bd8000" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_energy_rating] &gt;= 4.00 and [ext_nabers_energy_rating] &lt; 5.00</Filter>
+            <Filter>[ext_nabers_energy_rating] = "4 Star"</Filter>
             <PolygonSymbolizer fill="#a6aa00" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_energy_rating] &gt;= 5.00 and [ext_nabers_energy_rating] &lt; 6.00</Filter>
+            <Filter>[ext_nabers_energy_rating] = "5 Star"</Filter>
             <PolygonSymbolizer fill="#90d500" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_energy_rating] &gt;= 6.00</Filter>
+            <Filter>[ext_nabers_energy_rating] = "6 Star"</Filter>
             <PolygonSymbolizer fill="#7aff00" />
         </Rule>
 
@@ -662,31 +662,31 @@
     </Style>
     <Style name="ext_nabers_water_rating">
         <Rule>
-            <Filter>[ext_nabers_water_rating] &lt; 1.00</Filter>
+            <Filter>[ext_nabers_water_rating] = "0 Star"</Filter>
             <PolygonSymbolizer fill="#ff0000" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_water_rating] &gt;= 1.00 and [ext_nabers_water_rating] &lt; 2.00</Filter>
+            <Filter>[ext_nabers_water_rating] = "1 Star"</Filter>
             <PolygonSymbolizer fill="#e92b00" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_water_rating] &gt;= 2.00 and [ext_nabers_water_rating] &lt; 3.00</Filter>
+            <Filter>[ext_nabers_water_rating] = "2 Star"</Filter>
             <PolygonSymbolizer fill="#d35500" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_water_rating] &gt;= 3.00 and [ext_nabers_water_rating] &lt; 4.00</Filter>
+            <Filter>[ext_nabers_water_rating] = "3 Star"</Filter>
             <PolygonSymbolizer fill="#bd8000" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_water_rating] &gt;= 4.00 and [ext_nabers_water_rating] &lt; 5.00</Filter>
+            <Filter>[ext_nabers_water_rating] = "4 Star"</Filter>
             <PolygonSymbolizer fill="#a6aa00" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_water_rating] &gt;= 5.00 and [ext_nabers_water_rating] &lt; 6.00</Filter>
+            <Filter>[ext_nabers_water_rating] = "5 Star"</Filter>
             <PolygonSymbolizer fill="#90d500" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_water_rating] &gt;= 6.00</Filter>
+            <Filter>[ext_nabers_water_rating] = "6 Star"</Filter>
             <PolygonSymbolizer fill="#7aff00" />
         </Rule>
 
@@ -703,31 +703,31 @@
     </Style>
     <Style name="ext_nabers_indoor_rating">
         <Rule>
-            <Filter>[ext_nabers_indoor_rating] &lt; 1.00</Filter>
+            <Filter>[ext_nabers_indoor_rating] = "0 Star"</Filter>
             <PolygonSymbolizer fill="#ff0000" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_indoor_rating] &gt;= 1.00 and [ext_nabers_indoor_rating] &lt; 2.00</Filter>
+            <Filter>[ext_nabers_indoor_rating] = "1 Star"</Filter>
             <PolygonSymbolizer fill="#e92b00" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_indoor_rating] &gt;= 2.00 and [ext_nabers_indoor_rating] &lt; 3.00</Filter>
+            <Filter>[ext_nabers_indoor_rating] = "2 Star"</Filter>
             <PolygonSymbolizer fill="#d35500" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_indoor_rating] &gt;= 3.00 and [ext_nabers_indoor_rating] &lt; 4.00</Filter>
+            <Filter>[ext_nabers_indoor_rating] = "3 Star"</Filter>
             <PolygonSymbolizer fill="#bd8000" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_indoor_rating] &gt;= 4.00 and [ext_nabers_indoor_rating] &lt; 5.00</Filter>
+            <Filter>[ext_nabers_indoor_rating] = "4 Star"</Filter>
             <PolygonSymbolizer fill="#a6aa00" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_indoor_rating] &gt;= 5.00 and [ext_nabers_indoor_rating] &lt; 6.00</Filter>
+            <Filter>[ext_nabers_indoor_rating] = "5 Star"</Filter>
             <PolygonSymbolizer fill="#90d500" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_indoor_rating] &gt;= 6.00</Filter>
+            <Filter>[ext_nabers_indoor_rating] = "6 Star"</Filter>
             <PolygonSymbolizer fill="#7aff00" />
         </Rule>
 
@@ -744,31 +744,31 @@
     </Style>
     <Style name="ext_nabers_waste_rating">
         <Rule>
-            <Filter>[ext_nabers_waste_rating] &lt; 1.00</Filter>
+            <Filter>[ext_nabers_waste_rating] = "0 Star"</Filter>
             <PolygonSymbolizer fill="#ff0000" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_waste_rating] &gt;= 1.00 and [ext_nabers_waste_rating] &lt; 2.00</Filter>
+            <Filter>[ext_nabers_waste_rating] = "1 Star"</Filter>
             <PolygonSymbolizer fill="#e92b00" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_waste_rating] &gt;= 2.00 and [ext_nabers_waste_rating] &lt; 3.00</Filter>
+            <Filter>[ext_nabers_waste_rating] = "2 Star"</Filter>
             <PolygonSymbolizer fill="#d35500" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_waste_rating] &gt;= 3.00 and [ext_nabers_waste_rating] &lt; 4.00</Filter>
+            <Filter>[ext_nabers_waste_rating] = "3 Star"</Filter>
             <PolygonSymbolizer fill="#bd8000" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_waste_rating] &gt;= 4.00 and [ext_nabers_waste_rating] &lt; 5.00</Filter>
+            <Filter>[ext_nabers_waste_rating] = "4 Star"</Filter>
             <PolygonSymbolizer fill="#a6aa00" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_waste_rating] &gt;= 5.00 and [ext_nabers_waste_rating] &lt; 6.00</Filter>
+            <Filter>[ext_nabers_waste_rating] = "5 Star"</Filter>
             <PolygonSymbolizer fill="#90d500" />
         </Rule>
         <Rule>
-            <Filter>[ext_nabers_waste_rating] &gt;= 6.00</Filter>
+            <Filter>[ext_nabers_waste_rating] = "6 Star"</Filter>
             <PolygonSymbolizer fill="#7aff00" />
         </Rule>
 
