@@ -248,7 +248,7 @@ export const categoryMapsConfig: {[key in Category]: CategoryMapDefinition[]} = 
             mapStyle: 'planning_applications_status_all',
             legend: {
                 title: 'All planning applications available from GLA (official data)',
-                disclaimer: 'The map shows official data available from the GLA Planning London Datahub. What you are looking at is mainly applications from 2019 onwards.',
+                disclaimer: 'The map shows official data available online through the NSW DPE.',
                 elements: [
                     { color: '#a040a0', text: 'Submitted, awaiting decision' },
                     { color: '#fff200', text: 'Appeal In Progress' },
