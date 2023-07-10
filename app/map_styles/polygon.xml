@@ -458,7 +458,7 @@
     </Style>
     <Style name="planning_applications_status_all">
         <Rule>
-            <Filter>[status] = "Submitted"</Filter>
+            <Filter>[status] = "Submitted, awaiting decision"</Filter>
             <PolygonSymbolizer fill="#a040a0"/>
             <LineSymbolizer stroke="#a040a0" stroke-width="1.75" />
         </Rule>
@@ -483,14 +483,14 @@
             <LineSymbolizer stroke="#7a84a0" stroke-width="1.75" />
         </Rule>
         <Rule>
-            <Filter>[status] != "Submitted" and [status] != "Approved" and [status] != "Appeal In Progress" and [status] != "Rejected" and [status] != "Withdrawn"</Filter>
+            <Filter>[status] != "Submitted, awaiting decision" and [status] != "Approved" and [status] != "Appeal In Progress" and [status] != "Rejected" and [status] != "Withdrawn"</Filter>
             <PolygonSymbolizer fill="#eacad0"/>
             <LineSymbolizer stroke="#eacad0" stroke-width="1.75" />
         </Rule>
     </Style>
     <Style name="planning_applications_status_recent">
         <Rule>
-            <Filter>[status] = "Submitted" and [days_since_registered_with_local_authority_date] &lt; 366</Filter>
+            <Filter>[status] = "Submitted, awaiting decision" and [days_since_registered_with_local_authority_date] &lt; 366</Filter>
             <PolygonSymbolizer fill="#a040a0"/>
             <LineSymbolizer stroke="#a040a0" stroke-width="1.75" />
         </Rule>
@@ -515,14 +515,14 @@
             <LineSymbolizer stroke="#7a84a0" stroke-width="1.75" />
         </Rule>
         <Rule>
-            <Filter>[status] != "Submitted" and [status] != "Approved" and [status] != "Appeal In Progress" and [status] != "Rejected" and [status] != "Withdrawn" and [days_since_registered_with_local_authority_date] &lt; 366</Filter>
+            <Filter>[status] != "Submitted, awaiting decision" and [status] != "Approved" and [status] != "Appeal In Progress" and [status] != "Rejected" and [status] != "Withdrawn" and [days_since_registered_with_local_authority_date] &lt; 366</Filter>
             <PolygonSymbolizer fill="#eacad0"/>
             <LineSymbolizer stroke="#eacad0" stroke-width="1.75" />
         </Rule>
     </Style>
     <Style name="planning_applications_status_very_recent">
         <Rule>
-            <Filter>[status] = "Submitted" and [days_since_registered_with_local_authority_date] &lt;= 30</Filter>
+            <Filter>[status] = "Submitted, awaiting decision" and [days_since_registered_with_local_authority_date] &lt;= 30</Filter>
             <PolygonSymbolizer fill="#a040a0"/>
             <LineSymbolizer stroke="#a040a0" stroke-width="1.75" />
         </Rule>
@@ -547,7 +547,7 @@
             <LineSymbolizer stroke="#7a84a0" stroke-width="1.75" />
         </Rule>
         <Rule>
-            <Filter>[status] != "Submitted" and [status] != "Approved" and [status] != "Appeal In Progress" and [status] != "Rejected" and [status] != "Withdrawn" and [days_since_registered_with_local_authority_date] &lt;= 30</Filter>
+            <Filter>[status] != "Submitted, awaiting decision" and [status] != "Approved" and [status] != "Appeal In Progress" and [status] != "Rejected" and [status] != "Withdrawn" and [days_since_registered_with_local_authority_date] &lt;= 30</Filter>
             <PolygonSymbolizer fill="#eacad0"/>
             <LineSymbolizer stroke="#eacad0" stroke-width="1.75" />
         </Rule>
