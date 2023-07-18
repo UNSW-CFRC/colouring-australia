@@ -116,6 +116,16 @@ function renderHTML(context, data, req, res) {
         <meta name="mobile-web-app-capable" content="yes">
         <link rel="icon" sizes="192x192" href="icon-192x192.png">
 
+        <!-- Google tag (gtag.js) -->
+        <script async src=https://www.googletagmanager.com/gtag/js?id=${ process.env.GOOGLE_KEY }></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', ${ process.env.GOOGLE_KEY });
+        </script>
+
         <title>Colouring ${config.cityName}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <style>
