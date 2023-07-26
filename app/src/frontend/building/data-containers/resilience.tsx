@@ -24,6 +24,11 @@ const ResilienceView: React.FunctionComponent<CategoryViewProps> = (props) => {
 
     return (<>
         <DataEntryGroup name="Social Resilience" collapsed={true}>
+            <div className={`alert alert-dark`} role="alert" style={{ fontSize: 13, backgroundColor: "#f6f8f9" }}>
+                <i>
+                     The Rental Affordability Index is based on a median income of $1829AUD p.w. ($95,108AUD p.a.) as of the ABS 2021 Census.
+                </i>
+            </div>
             <NumericDataEntry
                 title={dataFields.ext_rental_affordability.title}
                 slug="ext_rental_affordability"
