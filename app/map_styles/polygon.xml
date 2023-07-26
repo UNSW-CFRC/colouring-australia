@@ -1147,79 +1147,79 @@
     </Style>
     <Style name="ext_rental_affordability">
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 270.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 216.0</Filter>
             <PolygonSymbolizer fill="#1a9850" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 255.0 and [ext_rental_affordability] &lt; 270.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 204.0 and [ext_rental_affordability] &lt; 216.0</Filter>
             <PolygonSymbolizer fill="#33a35c" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 240.0 and [ext_rental_affordability] &lt; 255.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 192.0 and [ext_rental_affordability] &lt; 204.0</Filter>
             <PolygonSymbolizer fill="#4daf69" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 225.0 and [ext_rental_affordability] &lt; 240.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 180.0 and [ext_rental_affordability] &lt; 192.0</Filter>
             <PolygonSymbolizer fill="#66ba75" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 210.0 and [ext_rental_affordability] &lt; 225.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 168.0 and [ext_rental_affordability] &lt; 180.0</Filter>
             <PolygonSymbolizer fill="#80c681" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 195.0 and [ext_rental_affordability] &lt; 210.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 156.0 and [ext_rental_affordability] &lt; 168.0</Filter>
             <PolygonSymbolizer fill="#99d18e" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 180.0 and [ext_rental_affordability] &lt; 195.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 144.0 and [ext_rental_affordability] &lt; 156.0</Filter>
             <PolygonSymbolizer fill="#b3dd9a" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 165.0 and [ext_rental_affordability] &lt; 180.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 132.0 and [ext_rental_affordability] &lt; 144.0</Filter>
             <PolygonSymbolizer fill="#cce8a6" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 150.0 and [ext_rental_affordability] &lt; 165.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 120.0 and [ext_rental_affordability] &lt; 132.0</Filter>
             <PolygonSymbolizer fill="#e6f4b3" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 135.0 and [ext_rental_affordability] &lt; 150.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 108.0 and [ext_rental_affordability] &lt; 120.0</Filter>
             <PolygonSymbolizer fill="#ffffbf" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 120.0 and [ext_rental_affordability] &lt; 135.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 96.0 and [ext_rental_affordability] &lt; 108.0</Filter>
             <PolygonSymbolizer fill="#fbe8ae" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 105.0 and [ext_rental_affordability] &lt; 120.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 84.0 and [ext_rental_affordability] &lt; 96.0</Filter>
             <PolygonSymbolizer fill="#f6d19d" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 90.0 and [ext_rental_affordability] &lt; 105.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 72.0 and [ext_rental_affordability] &lt; 84.0</Filter>
             <PolygonSymbolizer fill="#f2ba8c" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 75.0 and [ext_rental_affordability] &lt; 90.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 60.0 and [ext_rental_affordability] &lt; 72.0</Filter>
             <PolygonSymbolizer fill="#eda37b" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 60.0 and [ext_rental_affordability] &lt; 75.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 48.0 and [ext_rental_affordability] &lt; 60.0</Filter>
             <PolygonSymbolizer fill="#e98c6b" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 45.0 and [ext_rental_affordability] &lt; 60.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 36.0 and [ext_rental_affordability] &lt; 48.0</Filter>
             <PolygonSymbolizer fill="#e4755a" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 30.0 and [ext_rental_affordability] &lt; 45.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 24.0 and [ext_rental_affordability] &lt; 36.0</Filter>
             <PolygonSymbolizer fill="#e05e49" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &gt;= 15.0 and [ext_rental_affordability] &lt; 30.0</Filter>
+            <Filter>[ext_rental_affordability] &gt;= 12.0 and [ext_rental_affordability] &lt; 24.0</Filter>
             <PolygonSymbolizer fill="#db4738" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &lt; 15.0</Filter>
+            <Filter>[ext_rental_affordability] &lt; 12.0</Filter>
             <PolygonSymbolizer fill="#d73027" />
 	</Rule>
     </Style>
