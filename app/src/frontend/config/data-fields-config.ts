@@ -1349,6 +1349,12 @@ export const dataFields = { /* eslint-disable @typescript-eslint/camelcase */
         tooltip: "NABERS Waste Star Rating Value",
         example: '3 Star',
     },
+    ext_rental_affordability: {
+        category: Category.Resilience,
+        title: 'Rental Affordability Index',
+        tooltip: 'Rental Affordability Index',
+        example: 50.0,
+    },
 };
 
 export const allFieldsConfig = { ...dataFields, ...buildingUserFields };

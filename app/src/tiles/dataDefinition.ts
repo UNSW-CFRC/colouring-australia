@@ -314,6 +314,14 @@ const LAYER_QUERIES = {
             buildings
         WHERE
             current_landuse_order IS NOT NULL`,
+    ext_rental_affordability: `
+        SELECT
+            geometry_id,
+            ext_rental_affordability AS ext_rental_affordability
+        FROM
+            buildings
+        WHERE
+            ext_rental_affordability IS NOT NULL`,
     ext_walk_index: `
         SELECT
             geometry_id,

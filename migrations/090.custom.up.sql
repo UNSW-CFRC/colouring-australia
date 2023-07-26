@@ -14,6 +14,10 @@ ALTER TABLE buildings ADD COLUMN IF NOT EXISTS ext_walk_shopping real;
 ALTER TABLE buildings ADD COLUMN IF NOT EXISTS ext_walk_errands real;
 ALTER TABLE buildings ADD COLUMN IF NOT EXISTS ext_walk_recreation real;
 
+-- Resilience
+
+ALTER TABLE buildings ADD COLUMN IF NOT EXISTS ext_rental_affordability real;
+
 -- Construction
 
 ALTER TABLE buildings ADD COLUMN IF NOT EXISTS ext_building_quality text;

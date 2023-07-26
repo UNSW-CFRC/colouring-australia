@@ -3,6 +3,7 @@ import InfoBox from '../../components/info-box';
 import { dataFields } from '../../config/data-fields-config';
 import DataEntry from '../data-components/data-entry';
 import { DataEntryGroup } from '../data-components/data-entry-group';
+import NumericDataEntry from '../data-components/numeric-data-entry';
 import SelectDataEntry from '../data-components/select-data-entry';
 import withCopyEdit from '../data-container';
 import Verification from '../data-components/verification';
@@ -22,6 +23,19 @@ const ResilienceView: React.FunctionComponent<CategoryViewProps> = (props) => {
     const [ endDate, setEndDate ] = useState(null);
 
     return (<>
+        <DataEntryGroup name="Social Resilience" collapsed={true}>
+            <NumericDataEntry
+                title={dataFields.ext_rental_affordability.title}
+                slug="ext_rental_affordability"
+                value={props.building.ext_rental_affordability}
+                mode={props.mode}
+                copy={props.copy}
+                onChange={props.onChange}
+                min={0}
+                max={100}
+                tooltip={dataFields.ext_rental_affordability.tooltip}
+                />
+        </DataEntryGroup>
         <DataEntryGroup name="Building damage assessment tool" collapsed={true}>
             <div className={`alert alert-dark`} role="alert" style={{ fontSize: 13, backgroundColor: "#f6f8f9" }}>
                 <i>

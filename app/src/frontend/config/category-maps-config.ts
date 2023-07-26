@@ -551,6 +551,33 @@ export const categoryMapsConfig: {[key in Category]: CategoryMapDefinition[]} = 
     ],
     [Category.Resilience]: [
         {
+            mapStyle: 'ext_rental_affordability',
+            legend: {
+                title: 'Rental Affordability Index',
+                elements: [
+                    { color: '#f0f921', text: '>285' },
+                    { color: '#f7e225', text: '270-285' },
+                    { color: '#fccb26', text: '255-270' },
+                    { color: '#feb72d', text: '240-255' },
+                    { color: '#fba338', text: '225-240' },
+                    { color: '#f69044', text: '210-225' },
+                    { color: '#f07e4f', text: '195-210' },
+                    { color: '#e76d5b', text: '180-195' },
+                    { color: '#dc5e66', text: '165-180' },
+                    { color: '#d14e72', text: '150-165' },
+                    { color: '#c53f7e', text: '135-150' },
+                    { color: '#b7308b', text: '120-135' },
+                    { color: '#a72197', text: '105-120' },
+                    { color: '#9612a1', text: '90-105' },
+                    { color: '#8305a7', text: '75-90' },
+                    { color: '#6f00a8', text: '60-75' },
+                    { color: '#5901a5', text: '45-60' },
+                    { color: '#44049e', text: '30-45' },
+                    { color: '#2c0594', text: '15-30' },
+                    { color: '#0d0887', text: '<15' },
+                ]
+                }
+        },{
             mapStyle: 'disaster_severity',
             legend: {
                 title: 'Severity of damage',
