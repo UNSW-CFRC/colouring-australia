@@ -1219,7 +1219,7 @@
             <PolygonSymbolizer fill="#db4738" />
         </Rule>
         <Rule>
-            <Filter>[ext_rental_affordability] &lt; 12.0</Filter>
+            <Filter>[ext_rental_affordability] &gt; 0.1 and [ext_rental_affordability] &lt; 12.0</Filter>
             <PolygonSymbolizer fill="#d73027" />
 	</Rule>
     </Style>
