@@ -40,6 +40,36 @@ const SustainabilityView: React.FunctionComponent<CategoryViewProps> = (props) =
                     copy={props.copy}
                     onChange={props.onChange}
                 />
+                <SelectDataEntry
+                    title={dataFields.ext_nabers_water_rating.title}
+                    slug="ext_nabers_water_rating"
+                    value={props.building.ext_nabers_water_rating}
+                    tooltip={dataFields.ext_nabers_water_rating.tooltip}
+                    options={BreeamRatingOptions}
+                    mode={props.mode}
+                    copy={props.copy}
+                    onChange={props.onChange}
+                />
+                <SelectDataEntry
+                    title={dataFields.ext_nabers_indoor_rating.title}
+                    slug="ext_nabers_indoor_rating"
+                    value={props.building.ext_nabers_indoor_rating}
+                    tooltip={dataFields.ext_nabers_indoor_rating.tooltip}
+                    options={BreeamRatingOptions}
+                    mode={props.mode}
+                    copy={props.copy}
+                    onChange={props.onChange}
+                />
+                <SelectDataEntry
+                    title={dataFields.ext_nabers_waste_rating.title}
+                    slug="ext_nabers_waste_rating"
+                    value={props.building.ext_nabers_waste_rating}
+                    tooltip={dataFields.ext_nabers_waste_rating.tooltip}
+                    options={BreeamRatingOptions}
+                    mode={props.mode}
+                    copy={props.copy}
+                    onChange={props.onChange}
+                />
                 <Verification
                     slug="sust_breeam_rating"
                     allow_verify={props.user !== undefined && props.building.sust_breeam_rating !== null && !props.edited}
