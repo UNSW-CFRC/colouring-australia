@@ -1355,6 +1355,12 @@ export const dataFields = { /* eslint-disable @typescript-eslint/camelcase */
         tooltip: 'Rental Affordability Index',
         example: 50.0,
     },
+    ext_num_trees_within_100: {
+        category: Category.StreetContext,
+        title: 'Number of Trees Within 100m',
+        tooltip: 'Number of Trees Within 100m',
+        example: 10,
+    },
 };
 
 export const allFieldsConfig = { ...dataFields, ...buildingUserFields };

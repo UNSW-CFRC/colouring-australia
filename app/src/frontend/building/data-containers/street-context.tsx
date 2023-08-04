@@ -412,6 +412,25 @@ const StreetscapeView: React.FunctionComponent<CategoryViewProps> = (props) => (
                     />
                 </>
             }
+            <NumericDataEntry
+                title={dataFields.ext_num_trees_within_100.title}
+                value={props.building.ext_num_trees_within_100}
+                slug="ext_num_trees_within_100"
+                tooltip={dataFields.ext_num_trees_within_100.tooltip}
+                //placeholder={dataFields.context_tree_distance.example}
+                mode={props.mode}
+                onChange={props.onChange}
+                step={1}
+                min={0}
+            />
+            <Verification
+                slug="ext_num_trees_within_100"
+                allow_verify={props.user !== undefined && props.building.ext_num_trees_within_100 !== null}
+                onVerify={props.onVerify}
+                user_verified={props.user_verified.hasOwnProperty("ext_num_trees_within_100")}
+                user_verified_as={props.user_verified.ext_num_trees_within_100}
+                verified_count={props.building.verified.ext_num_trees_within_100}
+                />
         </DataEntryGroup>
     </Fragment>
 );
