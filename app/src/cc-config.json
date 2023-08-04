@@ -1,10 +1,10 @@
 {
-    "cityName": "Sydney",
-    "projectBlurb": "Colouring Sydney is part Colouring Cities.",
+    "cityName": "Melbourne",
+    "projectBlurb": "Colouring Melbourne is part Colouring Cities.",
     "githubURL": "https://github.com/colouring-cities/colouring-core",
     "privacyStatement": "{Privacy statement goes here}",
 
-    "initialMapPosition": [ -33.8688, 151.2093 ],
+    "initialMapPosition": [ -37.840935, 144.946457 ],
     "initialZoomLevel": 16,
 
     "postcode": "Postcode",

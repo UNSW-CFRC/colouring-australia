@@ -51,7 +51,7 @@ const LongText = ({ content,limit}) => {
   </div>
 }
 
-const Disclaimer = () => { return <Fragment><i><div><u>Disclaimer</u>: Not all applications for Sydney are displayed. Some plans are missing location information, or errors occured in loading data from the planning portal. For comprehensive information on applications please visit the relevant local authority's planning website.</div></i></Fragment> }
+const Disclaimer = () => { return <Fragment><i><div><u>Disclaimer</u>: Not all applications for Melbourne are displayed. Some plans are missing location information, or errors occured in loading data from the planning portal. For comprehensive information on applications please visit the relevant local authority's planning website.</div></i></Fragment> }
 
 const MissingData = "not provided by data source"
 
