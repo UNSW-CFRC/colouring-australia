@@ -16,6 +16,8 @@ const DataLayerSwitcher: React.FC<DataLayerSwitcherProps> = (props) => {
             showOverlayList(evt)
         }
     }
+    return (<form></form>)
+    /*
     return (
         <form className={`data-switcher map-button ${darkLightTheme}`} onSubmit={handleSubmit}>
             <button className="btn btn-outline btn-outline-dark"
@@ -24,6 +26,7 @@ const DataLayerSwitcher: React.FC<DataLayerSwitcherProps> = (props) => {
             </button>
         </form>
     );
+    */
 }
 
 export default DataLayerSwitcher;
