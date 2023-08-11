@@ -32,6 +32,7 @@ export type BuildingMapTileset =
     'ext_nabers_indoor_rating' |
     'ext_nabers_waste_rating' |
     'ext_rental_affordability' |
+    'ext_in_heritage' |
     'sust_dec' |
     'building_attachment_form' |
     'landuse' |

@@ -321,6 +321,17 @@ export const categoryMapsConfig: {[key in Category]: CategoryMapDefinition[]} = 
                     { color: '#8500d4', text: 'In Archaeological Priority Area'},
                 ]
             },
+        },
+        {
+            mapStyle: 'ext_in_heritage',
+            legend: {
+                title: 'In Heritage Zone',
+                description: 'Is the building in a heritage zone',
+                elements: [
+                    {color: '#f7ec25', text: 'Yes'},
+                    {color: '#ff2121', text: 'No'}
+                ]
+            }
         }
     ],
     [Category.EnergyPerformance]: [

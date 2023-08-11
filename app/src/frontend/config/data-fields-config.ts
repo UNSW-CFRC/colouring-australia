@@ -1361,6 +1361,12 @@ export const dataFields = { /* eslint-disable @typescript-eslint/camelcase */
         tooltip: 'Number of Trees Within 100m',
         example: 10,
     },
+    ext_in_heritage: {
+        category: Category.Planning,
+        title: 'In Heritage Area',
+        tooltip: 'In Heritage Area',
+        example: 'Yes',
+    },
 };
 
 export const allFieldsConfig = { ...dataFields, ...buildingUserFields };

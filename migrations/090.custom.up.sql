@@ -36,3 +36,7 @@ ALTER TABLE buildings ADD COLUMN IF NOT EXISTS ext_num_trees_within_100 real;
 ALTER TABLE buildings ADD COLUMN IF NOT EXISTS ext_avg_bld_density real;
 ALTER TABLE buildings ADD COLUMN IF NOT EXISTS ext_avg_bld_distance real;
 ALTER TABLE buildings ADD COLUMN IF NOT EXISTS ext_ownership text;
+
+-- Planning Controls
+
+ALTER TABLE buildings ADD COLUMN IF NOT EXISTS ext_in_heritage text;
