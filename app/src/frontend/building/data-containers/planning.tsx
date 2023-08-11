@@ -23,6 +23,12 @@ import { processParam } from '../../../api/parameters';
 const currentTimestamp = new Date().valueOf();
 const milisecondsInYear = 1000 * 60 * 60 * 24 * 365;
 
+const HeritageStatusOptions = [
+    'Yes',
+    'No'
+];
+
+
 // there is already "parseDate" in helpers
 // but it is using timestamp as input, while this one
 // uses lower accuracy (as actual data is using the same accuracy)
@@ -243,6 +249,18 @@ const PlanningView: React.FunctionComponent<CategoryViewProps> = (props) => {
                     */
                     }
             </DataEntryGroup>
+        </DataEntryGroup>
+        <DataEntryGroup name="Heritage" collapsed={true} >
+            <SelectDataEntry
+                title={dataFields.ext_in_heritage.title}
+                slug="ext_in_heritage"
+                value={props.building.ext_in_heritage}
+                tooltip={dataFields.ext_in_heritage.tooltip}
+                options={HeritageStatusOptions}
+                mode={props.mode}
+                copy={props.copy}
+                onChange={props.onChange}
+            />
         </DataEntryGroup>
     </Fragment>
 )};

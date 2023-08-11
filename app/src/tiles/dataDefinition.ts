@@ -370,6 +370,14 @@ const LAYER_QUERIES = {
             buildings
         WHERE
             ext_walk_recreation IS NOT NULL`,
+    ext_in_heritage: `
+        SELECT
+            geometry_id,
+            ext_in_heritage AS ext_in_heritage
+        FROM
+            buildings
+        WHERE
+            ext_in_heritage IS NOT NULL`,
     disaster_severity: `
         SELECT
             geometry_id,
