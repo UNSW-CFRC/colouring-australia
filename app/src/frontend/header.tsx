@@ -19,6 +19,48 @@ interface MenuLink {
 }
 
 
+/*
+function getCurrentActiveCityLinks(username: string): MenuLink[][] {
+    return [
+        [
+            {
+                to: "/view/categories",
+                text: "View Maps"
+            },
+            {
+                to: "/edit/categories",
+                text: "Edit Maps"
+            },
+            {
+                to: "/data-extracts.html",
+                text: "Download data"
+            },
+            {
+                to: "https://github.com/colouring-cities/manual/wiki",
+                text: "Open Manual - Wiki",
+                external: true
+            },
+            {
+                to: config.githubURL,
+                text: "Open code",
+                external: true
+            },
+            {
+                to: "https://github.com/colouring-cities/manual/wiki",
+                text: "Colouring Cities Open Manual/Wiki",
+                disabled: false,
+                external: true
+            },
+            {
+                to: "/showcase.html",
+                text: "Case Study Showcase",
+                disabled: true,
+            },
+        ],
+    ];
+}
+*/
+
 function getCurrentMenuLinks(username: string): MenuLink[][] {
     return [
         [
@@ -132,6 +174,48 @@ function getCurrentMenuLinks(username: string): MenuLink[][] {
     ];
 }
 
+const ActiveCityMenu: React.FC<{ onNavigate: () => void }> = ({ onNavigate }) => {
+    /*
+    const { user } = useAuth();
+
+    const menuLinkSections = getCurrentActiveCityLinks(user?.username);
+    return (
+        <WithSeparator separator={<hr />}>
+            {menuLinkSections.map((section, idx) =>
+                <ul key={`menu-section-${idx}`} className="navbar-nav flex-container">
+                    {section.map(item => (
+                        <li className='nav-item' key={`${item.to}-${item.text}`}>
+                            {
+                                item.disabled ?
+                                    <LinkStub note={item.note}>{item.text}</LinkStub> :
+                                    item.external ?
+                                        <ExternalNavLink to={item.to}>{item.text}</ExternalNavLink> :
+                                        <InternalNavLink to={item.to} onClick={onNavigate}>{item.text}</InternalNavLink>
+                            }
+                        </li>
+                    ))}
+                </ul>
+            )}
+        </WithSeparator>
+    );
+     */
+    return (
+        <WithSeparator separator={<hr />}>
+            <ul key={`menu-section`} className="navbar-nav flex-container">
+                {Object.keys(config.mapPositionMap).map(item =>
+                    <li className='nav-item' key={`${item}`}>
+                        {
+                            item == config.cityName ?
+                                <ExternalNavLink to={item}>{item}</ExternalNavLink> :
+                                <InternalNavLink to={item} onClick={onNavigate}>{item}</InternalNavLink>
+                        }
+                    </li>
+                )}
+            </ul>
+        </WithSeparator>
+    );
+};
+
 const Menu: React.FC<{ onNavigate: () => void }> = ({ onNavigate }) => {
     const { user } = useAuth();
 
@@ -179,10 +263,8 @@ const LinkStub: React.FC<{note: string}> = ({note, children}) => (
 export const Header: React.FC<{
     animateLogo: boolean;
 }> = ({ animateLogo }) => {
-    const [collapseMenu, setCollapseMenu] = useState(true);
-
-    const toggleCollapse = () => setCollapseMenu(!collapseMenu);
-    const handleNavigate = () => setCollapseMenu(true);
+    const [openMenuName, setOpenMenuName] = useState("");
+    const handleNavigate = () => setOpenMenuName("");
 
     return (
     <header className="main-header navbar navbar-light">
@@ -191,16 +273,28 @@ export const Header: React.FC<{
                 <Logo variant={animateLogo ? 'animated' : 'default'}/>
             </NavLink>
             <button className="navbar-toggler" type="button"
-                onClick={toggleCollapse} aria-expanded={!collapseMenu} aria-label="Toggle navigation">
+                onClick={() => setOpenMenuName(openMenuName == "activeCity" ? "" : "activeCity")} aria-expanded={(openMenuName == "activeCity")} aria-label="Toggle cityselector">
+                ActiveCity&nbsp;
+                {
+                    !(openMenuName == "activeCity") ?
+                        <span className="navbar-toggler-icon"></span>
+                        : <span className="close">&times;</span>
+                }
+            </button>
+            <button className="navbar-toggler" type="button"
+                onClick={() => setOpenMenuName(openMenuName == "menu" ? "" : "menu")} aria-expanded={(openMenuName == "menu")} aria-label="Toggle cityselector">
                 Menu&nbsp;
                 {
-                    collapseMenu ?
+                    !(openMenuName == "menu") ?
                         <span className="navbar-toggler-icon"></span>
                         : <span className="close">&times;</span>
                 }
             </button>
         </div>
-        <nav className={collapseMenu ? 'collapse navbar-collapse' : 'navbar-collapse'}>
+        <nav className={(openMenuName != "activeCity") ? 'collapse navbar-collapse' : 'navbar-collapse'}>
+            <ActiveCityMenu onNavigate={handleNavigate}></ActiveCityMenu>
+        </nav>
+        <nav className={(openMenuName != "menu") ? 'collapse navbar-collapse' : 'navbar-collapse'}>
             <Menu onNavigate={handleNavigate}></Menu>
         </nav>
     </header>

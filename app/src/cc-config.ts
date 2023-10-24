@@ -8,6 +8,9 @@ export interface CCConfig
     initialMapPosition: [number, number];       // Initial location of the map [latitude, longitude]
     initialZoomLevel: number;                   // Initial Zoom Level 
 
+    mapPositionMap: { [key:string]:[number, number] };
+    boundingBoxMap: { [key:string]:[number, number, number, number] };
+
     postcode: string;                           // Alternative for "Postcode" text (i.e. "Zip Code")
     energy_rating: string;                      // Official Environmental Energy Rating (BREEAM Rating in UK)
 }

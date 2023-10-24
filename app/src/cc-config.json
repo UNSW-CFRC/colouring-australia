@@ -1,11 +1,29 @@
 {
-    "cityName": "Sydney",
-    "projectBlurb": "Colouring Sydney is part Colouring Cities.",
+    "cityName": "Hobart",
+    "projectBlurb": "Colouring Australia is part Colouring Cities.",
     "githubURL": "https://github.com/colouring-cities/colouring-core",
     "privacyStatement": "{Privacy statement goes here}",
 
     "initialMapPosition": [ -33.8688, 151.2093 ],
     "initialZoomLevel": 16,
+
+    "mapPositionMap": {
+        "Sydney": [ -33.8688, 151.2093 ],
+        "Melbourne": [ -37.840935, 144.946457 ],
+        "Adelaide": [  -34.9285, 138.6007],
+        "Brisbane": [ -27.4705, 153.0260 ],
+        "Perth": [ -31.9523, 115.8613],
+        "Hobart": [ -42.880052, 147.329664 ]
+    },
+
+    "boundingBoxMap": {
+        "Sydney":[15695967.96276261, -4509772.312438116, 17711537.026709203, -3268784.8799899397],
+        "Melbourne":[12366899.680315, -5439870.428999, 17180597.973602, -1066449.418635],
+        "Adelaide": [ 14367715.332708, -4622911.470687, 15698331.121096, -2993885.523874 ],
+        "Brisbane": [ 15326541.415517, -3409702.957745, 17711537.026709203, -1125153.056358 ],
+        "Perth": [ 12366899.680315, -5439870.428999, 13893194.261114, -1066449.418635 ],
+        "Hobart": [ 16048106.962529, -5442316.413905, 16642481.294475, -4916429.659303 ]
+    },
 
     "postcode": "Postcode",
     "energy_rating": "National Australian Built Environment Rating System (NABERS) rating"

@@ -50,7 +50,9 @@
 }
 .main-header .navbar-collapse {
     height: calc(100vh - 76px);
+    width: 100%;
     display: block;
+    /*position: absolute;*/
     overflow-y: auto;
     transition: transform 0.3s;
     transform: translateY(0);
@@ -65,7 +67,8 @@
     padding-bottom: 5rem;
 }
 .navbar-collapse.collapse {
-    transform: translateY(-100vh);
+    /*transform: translateY(-100vh);*/
+    display:none;
 }
 
 .navbar-collapse {

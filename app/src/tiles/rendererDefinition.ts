@@ -7,6 +7,8 @@ import { stitchTile } from "./renderers/stitchTile";
 import { TileCache } from "./tileCache";
 import { BoundingBox, Tile, TileParams } from "./types";
 import { isOutsideExtent } from "./util";
+import { CCConfig } from '../cc-config';
+let config: CCConfig = require('../cc-config.json')
 
 /**
  * A list of all tilesets handled by the tile server
@@ -24,7 +26,8 @@ const STITCH_THRESHOLD = 12;
  * bbox in CRS epsg:3857 in form: [w, s, e, n]
  */
 //const EXTENT_BBOX: BoundingBox = [-61149.622628, 6667754.851372, 37183, 6744803.375884];
-const EXTENT_BBOX: BoundingBox = [15695967.96276261, -4509772.312438116, 17711537.026709203, -3268784.8799899397];
+//const EXTENT_BBOX: BoundingBox = [15695967.96276261, -4509772.312438116, 17711537.026709203, -3268784.8799899397];
+const EXTENT_BBOX: BoundingBox = config.boundingBoxMap[config.cityName];
 
 const allLayersCacheSwitch = parseBooleanExact(process.env.CACHE_TILES) ?? true;
 const dataLayersCacheSwitch = parseBooleanExact(process.env.CACHE_DATA_TILES) ?? true;
