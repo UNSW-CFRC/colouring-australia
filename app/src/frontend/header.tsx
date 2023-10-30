@@ -202,12 +202,12 @@ const ActiveCityMenu: React.FC<{ onNavigate: () => void }> = ({ onNavigate }) =>
     return (
         <WithSeparator separator={<hr />}>
             <ul key={`menu-section`} className="navbar-nav flex-container">
-                {Object.keys(config.mapPositionMap).map(item =>
+                {Object.keys(config.cityLinkMap).map(item =>
                     <li className='nav-item' key={`${item}`}>
                         {
                             item == config.cityName ?
-                                <ExternalNavLink to={item}>{item}</ExternalNavLink> :
-                                <InternalNavLink to={item} onClick={onNavigate}>{item}</InternalNavLink>
+                                <LinkStub note="">{item}</LinkStub> :
+                                <ExternalNavLink to={config.cityLinkMap[item]}>{item}</ExternalNavLink>
                         }
                     </li>
                 )}

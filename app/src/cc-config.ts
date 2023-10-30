@@ -8,6 +8,7 @@ export interface CCConfig
     initialMapPosition: [number, number];       // Initial location of the map [latitude, longitude]
     initialZoomLevel: number;                   // Initial Zoom Level 
 
+    cityLinkMap: { [key:string]:string };
     mapPositionMap: { [key:string]:[number, number] };
     boundingBoxMap: { [key:string]:[number, number, number, number] };
 
