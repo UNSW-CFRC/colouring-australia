@@ -175,30 +175,6 @@ function getCurrentMenuLinks(username: string): MenuLink[][] {
 }
 
 const ActiveCityMenu: React.FC<{ onNavigate: () => void }> = ({ onNavigate }) => {
-    /*
-    const { user } = useAuth();
-
-    const menuLinkSections = getCurrentActiveCityLinks(user?.username);
-    return (
-        <WithSeparator separator={<hr />}>
-            {menuLinkSections.map((section, idx) =>
-                <ul key={`menu-section-${idx}`} className="navbar-nav flex-container">
-                    {section.map(item => (
-                        <li className='nav-item' key={`${item.to}-${item.text}`}>
-                            {
-                                item.disabled ?
-                                    <LinkStub note={item.note}>{item.text}</LinkStub> :
-                                    item.external ?
-                                        <ExternalNavLink to={item.to}>{item.text}</ExternalNavLink> :
-                                        <InternalNavLink to={item.to} onClick={onNavigate}>{item.text}</InternalNavLink>
-                            }
-                        </li>
-                    ))}
-                </ul>
-            )}
-        </WithSeparator>
-    );
-     */
     return (
         <WithSeparator separator={<hr />}>
             <ul key={`menu-section`} className="navbar-nav flex-container">
@@ -274,7 +250,7 @@ export const Header: React.FC<{
             </NavLink>
             <button className="navbar-toggler" type="button"
                 onClick={() => setOpenMenuName(openMenuName == "activeCity" ? "" : "activeCity")} aria-expanded={(openMenuName == "activeCity")} aria-label="Toggle cityselector">
-                ActiveCity&nbsp;
+                {config.cityName}&nbsp;
                 {
                     !(openMenuName == "activeCity") ?
                         <span className="navbar-toggler-icon"></span>

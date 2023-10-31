@@ -20,7 +20,7 @@ const Logo: React.FunctionComponent<LogoProps> = (props) => {
             <LogoGrid />
             <h1 className="logotype">
                 <span>Colouring</span>
-                <span>{config.cityName}</span>
+                <span>Australia</span>
             </h1>
         </div>
     );
