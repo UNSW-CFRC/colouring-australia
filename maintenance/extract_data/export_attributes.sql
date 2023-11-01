@@ -117,6 +117,25 @@ COPY (SELECT
     age_retrofit_date,
     age_retrofit_date_source_type,
     age_retrofit_date_source_links,
+    ext_nabers_energy_rating,
+    ext_nabers_water_rating,
+    ext_nabers_indoor_rating,
+    ext_nabers_waste_rating,
+    ext_walk_index,
+    ext_walk_employment,
+    ext_walk_education,
+    ext_walk_shopping,
+    ext_walk_errands,
+    ext_walk_recreation,
+    ext_rental_affordability,
+    ext_building_quality,
+    ext_electricity,
+    ext_solarpanels,
+    ext_num_trees_within_100,
+    ext_avg_bld_density,
+    ext_avg_bld_distance,
+    ext_ownership,
+    ext_in_heritage
 FROM buildings)
 TO '/tmp/building_attributes.csv'
 WITH CSV HEADER
