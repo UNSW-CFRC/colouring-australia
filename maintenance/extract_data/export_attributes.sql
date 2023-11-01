@@ -53,7 +53,6 @@ COPY (SELECT
     planning_portal_link,
     planning_in_conservation_area_id,
     planning_in_conservation_area_url,
-    planning_in_conservation_area_source_url,
     planning_conservation_area_name,
     planning_in_list,
     planning_list_id,
