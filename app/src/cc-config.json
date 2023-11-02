@@ -8,12 +8,12 @@
     "initialZoomLevel": 16,
 
     "cityLinkMap": {
-        "Sydney": "https://dev-sydney.colouringaustralia.org",
-        "Melbourne": "https://dev-melbourne.colouringaustralia.org",
-        "Adelaide": "https://dev-adelaide.colouringaustralia.org",
-        "Brisbane": "https://dev-brisbane.colouringaustralia.org",
-        "Perth": "https://dev-perth.colouringaustralia.org",
-        "Hobart": "https://dev-hobart.colouringaustralia.org"
+        "Sydney": "https://sydney.colouringaustralia.org",
+        "Melbourne": "https://melbourne.colouringaustralia.org",
+        "Adelaide": "https://adelaide.colouringaustralia.org",
+        "Brisbane": "https://brisbane.colouringaustralia.org",
+        "Perth": "https://perth.colouringaustralia.org",
+        "Hobart": "https://hobart.colouringaustralia.org"
     },
 
     "mapPositionMap": {
