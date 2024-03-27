@@ -40,14 +40,15 @@ const Welcome = () => (
         </Link>
         <div className="image-row">
             <img className="cl-logo" src="images/logo-cc.jpg" alt="Colouring Cities Research Programme"></img>
-            <img className="turing-logo" src="images/logo-turing.jpg" alt="Alan Turing Institute"></img>
+            <img src="images/logo-cfrc.jpg" alt="City Futures Research Centre" />
         </div>
         <div className="image-row">
-            <img src="images/supporter-logos.png" alt="Colouring Cities collaborating organisations: The Bartlett UCL, Ordnance Survey, Historic England, Greater London Authority" />
-        </div>
-        <div className="image-row">
-            <img src="images/logo-loughborough.png" alt="Colouring Cities collaborating organisations: Loughborough University" />
-            <img src="images/logo-newcastle.png" alt="Colouring Cities collaborating organisations: Newcastle University" />
+            <img src="images/logo-turing.jpg" alt="Colouring Sydney collaborating organisations" />
+            <img src="images/logo-ucl.png" alt="Colouring Sydney collaborating organisations" />
+            <img src="images/logo-uq.png" alt="Colouring Sydney collaborating organisations" />
+            <img src="images/logo-curtin.jpg" alt="Colouring Sydney collaborating organisations" />
+            <img src="images/logo-swinburne.png" alt="Colouring Sydney collaborating organisations" />
+            <img src="images/logo-unisa.png" alt="Colouring Sydney collaborating organisations" />
         </div>
     </div>
 );
