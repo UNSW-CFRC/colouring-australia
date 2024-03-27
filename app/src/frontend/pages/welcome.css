@@ -15,11 +15,9 @@
 }
 
 .image-row img {
-    height: 4em;
     margin: 0 1em;
-    max-height: 100%;
-    max-width: 100%;
-    /*max-width: 40%;*/
+    max-height: 4em;
+    max-width: 40%;
     align-self: flex-start;
 }
 

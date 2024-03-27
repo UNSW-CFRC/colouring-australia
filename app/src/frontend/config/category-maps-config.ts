@@ -435,6 +435,7 @@ export const categoryMapsConfig: {[key in Category]: CategoryMapDefinition[]} = 
                 ]
             },
         },
+        /*
         {
             mapStyle: 'is_domestic',
             legend: {
@@ -446,6 +447,7 @@ export const categoryMapsConfig: {[key in Category]: CategoryMapDefinition[]} = 
                 ]
             }
         }
+        */
     ],
     [Category.StreetContext]: [
         {
