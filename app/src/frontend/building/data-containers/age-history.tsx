@@ -379,55 +379,6 @@ const AgeView: React.FunctionComponent<CategoryViewProps> = (props) => {
                     Please let us know your suggestions on the <a href="https://discuss.colouring.london/t/dynamics-category-discussion/107">discussion forum</a>! (external link - save your edits first)
                 </InfoBox>
             </DataEntryGroup>
-            <DataEntryGroup name="Survival and loss tracked using historical maps" collapsed={true} >
-                <div className={`alert alert-dark`} role="alert" style={{ fontSize: 13, backgroundColor: "#f6f8f9" }}>
-                    <i>
-                        Can you help us create a map that shows how many buildings in London have survived since the 1890s? 
-                        Choose a colour to indicate whether the building has survived.
-                    </i>
-                </div>
-                <button className={`map-switcher-inline ${props.mapColourScale == "survival_status" ? "enabled-state" : "disabled-state"} btn btn-outline btn-outline-dark ${darkLightTheme}`} onClick={switchToSurvivalMapStyle}>
-                    {(props.mapColourScale == "is_domestic")? 'Click here to hide historical maps':'Click here to show historical maps'}
-                </button>
-                <SelectDataEntry
-                    title={dataFields.survival_status.title}
-                    slug="survival_status"
-                    value={props.building.survival_status}
-                    tooltip={dataFields.survival_status.tooltip}
-                    options={SurvivalStatusOptions}
-                    mode={props.mode}
-                    copy={props.copy}
-                    onChange={props.onChange}
-                />
-                <SelectDataEntry
-                    title={dataFields.survival_source.title}
-                    slug="survival_source"
-                    value={props.building.survival_source}
-                    mode={props.mode}
-                    copy={props.copy}
-                    onChange={props.onChange}
-                    tooltip={dataFields.survival_source.tooltip}
-                    placeholder={dataFields.survival_source.example}
-                    options={dataFields.survival_source.items}
-                    />
-                {(props.building.survival_source == dataFields.survival_source_links[0] ||
-                    props.building.survival_source == dataFields.survival_source_links[1] ||
-                    props.building.survival_source == null) ? <></> :
-                    <><MultiDataEntry
-                        title={dataFields.survival_source_links.title}
-                        slug="survival_source_links"
-                        value={props.building.survival_source_links}
-                        mode={props.mode}
-                        copy={props.copy}
-                        onChange={props.onChange}
-                        tooltip={dataFields.survival_source_links.tooltip}
-                        placeholder="https://..."
-                        editableEntries={true}
-                        isUrl={true}
-                        />
-                    </>
-                }
-            </DataEntryGroup>
           </Fragment>
         );
       };
@@ -750,55 +701,6 @@ const AgeView: React.FunctionComponent<CategoryViewProps> = (props) => {
                     This section is under development in collaboration with the historic environment sector.
                     Please let us know your suggestions on the <a href="https://discuss.colouring.london/t/dynamics-category-discussion/107">discussion forum</a>! (external link - save your edits first)
                 </InfoBox>
-            </DataEntryGroup>
-            <DataEntryGroup name="Survival and loss tracked using historical maps" collapsed={true} >
-                <div className={`alert alert-dark`} role="alert" style={{ fontSize: 13, backgroundColor: "#f6f8f9" }}>
-                    <i>
-                        Can you help us create a map that shows how many buildings in London have survived since the 1890s? 
-                        Choose a colour to indicate whether the building has survived.
-                    </i>
-                </div>
-                <button className={`map-switcher-inline ${props.mapColourScale == "survival_status" ? "enabled-state" : "disabled-state"} btn btn-outline btn-outline-dark ${darkLightTheme}`} onClick={switchToSurvivalMapStyle}>
-                    {(props.mapColourScale == "is_domestic")? 'Click here to hide historical maps':'Click here to show historical maps'}
-                </button>
-                <SelectDataEntry
-                    title={dataFields.survival_status.title}
-                    slug="survival_status"
-                    value={props.building.survival_status}
-                    tooltip={dataFields.survival_status.tooltip}
-                    options={SurvivalStatusOptions}
-                    mode={props.mode}
-                    copy={props.copy}
-                    onChange={props.onChange}
-                />
-                <SelectDataEntry
-                    title={dataFields.survival_source.title}
-                    slug="survival_source"
-                    value={props.building.survival_source}
-                    mode={props.mode}
-                    copy={props.copy}
-                    onChange={props.onChange}
-                    tooltip={dataFields.survival_source.tooltip}
-                    placeholder={dataFields.survival_source.example}
-                    options={dataFields.survival_source.items}
-                />
-                {(props.building.survival_source == dataFields.survival_source.items[0] ||
-                    props.building.survival_source == dataFields.survival_source.items[1] ||
-                    props.building.survival_source == null) ? <></> :
-                    <><MultiDataEntry
-                        title={dataFields.survival_source_links.title}
-                        slug="survival_source_links"
-                        value={props.building.survival_source_links}
-                        mode={props.mode}
-                        copy={props.copy}
-                        onChange={props.onChange}
-                        tooltip={dataFields.survival_source_links.tooltip}
-                        placeholder="https://..."
-                        editableEntries={true}
-                        isUrl={true}
-                        />
-                    </>
-                }
             </DataEntryGroup>
         </Fragment>
     );

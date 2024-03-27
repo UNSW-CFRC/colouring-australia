@@ -48,6 +48,7 @@ export const categoryMapsConfig: {[key in Category]: CategoryMapDefinition[]} = 
                 ]
             },
         },
+        /*
         {
             mapStyle: 'survival_status',
             legend: {
@@ -60,6 +61,7 @@ export const categoryMapsConfig: {[key in Category]: CategoryMapDefinition[]} = 
                 ]
             }
         },
+        */
     ],
     [Category.Size]: [
         {

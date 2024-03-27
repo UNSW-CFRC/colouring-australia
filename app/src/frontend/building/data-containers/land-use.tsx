@@ -32,61 +32,6 @@ const UseView: React.FunctionComponent<CategoryViewProps> = (props) => {
     const { darkLightTheme } = useDisplayPreferences();
       return (
           <Fragment>
-                <DataEntryGroup name="Residential/non-residential land use data (general)">
-                    <div className={`alert alert-dark`} role="alert" style={{ fontSize: 13, backgroundColor: "#f6f8f9" }}>
-                        <i>
-                            The vast majority of properties are residential (93% in the UK), so we have set 'residential' as the default value. Can you help us identify non-residential and mixed use buildings (and verify residential buildings too)?
-                        </i>
-                    </div>
-                    <button className={`map-switcher-inline ${props.mapColourScale == "is_domestic" ? "enabled-state" : "disabled-state"} btn btn-outline btn-outline-dark ${darkLightTheme}`} onClick={switchToIsDomesticMapStyle}>
-                        {(props.mapColourScale == "is_domestic")? 'Showing domestic, non-domestic and mixed-use buildings (click to hide)' : 'Click to see domestic, non-domestic and mixed-use buildings on the map.'}
-                    </button>
-                    <SelectDataEntry
-                        title={dataFields.is_domestic.title}
-                        slug="is_domestic"
-                        value={props.building.is_domestic}
-                        options={dataFields.is_domestic.items}
-                        mode={props.mode}
-                        copy={props.copy}
-                        onChange={props.onChange}
-                        tooltip={dataFields.is_domestic.tooltip}
-                    />
-                    <Verification
-                        slug="is_domestic"
-                        allow_verify={props.user !== undefined && props.building.is_domestic !== null && !props.edited}
-                        onVerify={props.onVerify}
-                        user_verified={props.user_verified.hasOwnProperty("is_domestic")}
-                        user_verified_as={props.user_verified.is_domestic}
-                        verified_count={props.building.verified.is_domestic}
-                    />
-                    <SelectDataEntry
-                        title={dataFields.is_domestic_source.title}
-                        slug="is_domestic_source"
-                        value={props.building.is_domestic_source}
-                        options={dataFields.is_domestic_source.items}
-                        mode={props.mode}
-                        copy={props.copy}
-                        onChange={props.onChange}
-                        tooltip={dataFields.is_domestic_source.tooltip}
-                    />
-                    {(props.building.is_domestic_source == commonSourceTypes[0] ||
-                        props.building.is_domestic_source == commonSourceTypes[1] ||
-                        props.building.is_domestic_source == null) ? <></> :
-                        <><MultiDataEntry
-                            title={dataFields.is_domestic_links.title}
-                            slug="is_domestic_links"
-                            value={props.building.is_domestic_links}
-                            mode={props.mode}
-                            copy={props.copy}
-                            onChange={props.onChange}
-                            tooltip={dataFields.is_domestic_links.tooltip}
-                            placeholder="https://..."
-                            editableEntries={true}
-                            isUrl={true}
-                            />
-                        </>
-                    }
-                </DataEntryGroup>
                 <DataEntryGroup name="Specific land use data">
                     <MultiDataEntry
                         title={dataFields.current_landuse_group.title}
